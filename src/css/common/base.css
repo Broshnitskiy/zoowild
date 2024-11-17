@@ -3,6 +3,9 @@
   --secondary-color: #5b6153;
   --grand-color: #faffee;
   --indent-color: #ffffff;
+
+  --main-font: 'Gagalin', serif;
+  --second-font: 'Manrope', sans-serif;
 }
 
 @font-face {
@@ -13,19 +16,8 @@
 }
 
 body {
-  /* font-family: 'Gagalin', sans-serif; */
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--second-font);
   color: var(--secondary-color);
-  display: flex;
-  flex-direction: column;
-  min-width: 100vw;
   min-height: 100vh;
-  margin: 0;
-}
-
-main {
-  flex-grow: 1;
-}
-main:has(.back-link) {
-  text-align: center;
+  background-color: var(--grand-color);
 }

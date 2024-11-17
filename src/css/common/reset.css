@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -12,6 +18,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
+ol,
 ul {
   margin: 0;
   padding: 0;
@@ -24,6 +31,7 @@ a {
 }
 
 button {
+  padding: 0;
   cursor: pointer;
 }
 
