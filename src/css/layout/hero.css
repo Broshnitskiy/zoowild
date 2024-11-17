@@ -1,0 +1,22 @@
+.hero {
+  overflow-x: hidden;
+  position: relative;
+  height: 100vh;
+
+  background-image: url('../../img/hero/bg-mobile.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image: url('../../img/hero/bg-tablet.webp');
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    background-image: url('../../img/hero/bg-desktop.webp');
+  }
+}

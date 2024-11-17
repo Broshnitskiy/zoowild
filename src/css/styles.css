@@ -12,7 +12,7 @@
 @import url('./common/animations.css');
 
 /* Layout styles */
-/* @import url('./header.css'); */
+@import url('./layout/hero.css');
 
 /* components style */
 /* @import url('./header.css'); */
