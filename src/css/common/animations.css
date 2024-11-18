@@ -1,18 +1,16 @@
-@keyframes slide {
-  from {
-    transform: translateX(-140%) translateY(-50%);
-  }
-  to {
-    transform: translateX(-104%) translateY(-50%);
-  }
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 2s forwards;
 }
-@keyframes stretch {
-  from {
+
+@keyframes fadeInUp {
+  0% {
     opacity: 0;
-    transform: translateX(-50%) translateY(100%) scale(0.2);
+    transform: translateY(20px);
   }
-  to {
+  100% {
     opacity: 1;
-    transform: translateX(-50%) translateY(100%) scale(1);
+    transform: translateY(0);
   }
 }
