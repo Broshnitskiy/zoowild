@@ -41,6 +41,11 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--indent-color);
+  margin-bottom: 23px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   text-shadow: 0 9px 20px rgba(0, 0, 0, 0.2), 0 37px 37px rgba(0, 0, 0, 0.15),
     0 82px 49px rgba(0, 0, 0, 0.12), 0 146px 59px rgba(0, 0, 0, 0.01),
@@ -48,9 +53,52 @@
   mix-blend-mode: overlay;
 }
 
+.hero__description {
+  font-size: 16px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--indent-color);
+  margin: 0 auto 25px auto;
+  max-width: 216px;
+}
+
+.hero__button {
+  display: flex;
+  align-items: center;
+
+  border: 1.45px solid #fff;
+  border-radius: 60px;
+  width: 235px;
+  height: 44px;
+  box-shadow: 0 6px 14px rgba(3, 30, 9, 0.3);
+  background: var(--primary-color);
+  margin: 0 auto;
+}
+
+.hero__button__icon--catalog {
+  margin-left: 2px;
+}
+
+.hero__button__text--catalog {
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 88%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  margin-left: 30px;
+  color: var(--indent-color);
+  transition: color 0.25s ease;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .hero__link:hover .hero__link__text {
     color: #ffcc00;
+  }
+
+  .hero__button:hover .hero__button__text--catalog {
+    color: var(--secondary-color);
   }
 }
 
@@ -74,6 +122,13 @@
     text-shadow: 0 22px 49px rgba(0, 0, 0, 0.2), 0 88px 88px rgba(0, 0, 0, 0.15),
       0 199px 119px rgba(0, 0, 0, 0.12), 0 353px 141px rgba(0, 0, 0, 0.01),
       0 552px 154px rgba(0, 0, 0, 0), 2px 1px 0 #120e01;
+    margin-bottom: 30px;
+  }
+
+  .hero__description {
+    font-size: 17px;
+    margin: 0 auto 30px auto;
+    max-width: 248px;
   }
 }
 
@@ -98,6 +153,29 @@
       0 133px 133px rgba(0, 0, 0, 0.15), 0 299px 179px rgba(0, 0, 0, 0.12),
       0 531px 213px rgba(0, 0, 0, 0.01), 0 829px 232px rgba(0, 0, 0, 0),
       3px 2px 0 #120e01;
+    margin-bottom: 30px;
+  }
+
+  .hero__description {
+    font-size: 18px;
+    max-width: 304px;
+    text-align: justify;
+  }
+
+  .hero__button {
+    height: 50px;
+  }
+
+  .hero__button__icon--catalog {
+    width: 43px;
+    height: 43px;
+    margin-left: 3px;
+  }
+
+  .hero__button__text--catalog {
+    font-size: 21px;
+    line-height: 76%;
+    margin-left: 20px;
   }
 }
 

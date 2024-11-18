@@ -17,6 +17,7 @@
 
 body {
   font-family: var(--second-font);
+  font-weight: 400;
   color: var(--secondary-color);
   min-height: 100vh;
   background-color: var(--grand-color);
