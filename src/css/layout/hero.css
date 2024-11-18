@@ -1,6 +1,5 @@
 .hero {
   overflow-x: hidden;
-  position: relative;
   padding-top: 196px;
   height: 105vh;
 
@@ -8,6 +7,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
+}
+
+.hero__container {
+  position: relative;
 }
 
 .hero__title-wrapper {
@@ -89,12 +92,26 @@
   text-transform: uppercase;
   margin-left: 30px;
   color: var(--indent-color);
-  transition: color 0.25s ease;
+  transition: color 1s ease;
+}
+
+.hero__image-parrot {
+  position: absolute;
+  top: -65px;
+  left: -10px;
+  width: 82px;
+}
+
+.hero__image-parrot-secondary {
+  width: 106px;
+  position: absolute;
+  top: -50px;
+  right: 10px;
 }
 
 @media (hover: hover) and (pointer: fine) {
   .hero__link:hover .hero__link__text {
-    color: #ffcc00;
+    color: #f2e533;
   }
 
   .hero__button:hover .hero__button__text--catalog {
@@ -129,6 +146,16 @@
     font-size: 17px;
     margin: 0 auto 30px auto;
     max-width: 248px;
+  }
+
+  .hero__image-parrot {
+    top: -60px;
+    left: 50px;
+  }
+
+  .hero__image-parrot-secondary {
+    top: -10px;
+    right: 35px;
   }
 }
 
@@ -176,6 +203,16 @@
     font-size: 21px;
     line-height: 76%;
     margin-left: 20px;
+  }
+
+  .hero__image-parrot {
+    top: 10px;
+    left: 70px;
+  }
+
+  .hero__image-parrot-secondary {
+    top: 44px;
+    right: 0;
   }
 }
 
