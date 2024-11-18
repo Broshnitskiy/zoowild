@@ -1,7 +1,9 @@
 .hero {
   overflow: hidden;
   padding-top: 196px;
-  min-height: 98vh;
+
+  min-height: 680px;
+  height: 96vh;
   position: relative;
 
   background-image: url('../../img/hero/bg-mobile.webp');
@@ -161,7 +163,7 @@
   .hero {
     padding-top: 143px;
     background-image: url('../../img/hero/bg-tablet.webp');
-    min-height: 105vh;
+    height: calc(100vh + 25px);
   }
 
   .hero__title-wrapper {
@@ -221,6 +223,7 @@
 
 @media only screen and (min-width: 1200px) {
   .hero {
+    height: calc(100vh + 40px);
     padding-top: 98px;
     background-image: url('../../img/hero/bg-desktop.webp');
   }
