@@ -22,7 +22,7 @@
 }
 
 .hero__link {
-  display: flex;
+  display: inline-flex;
   gap: 10px;
   align-items: center;
   margin-bottom: 16px;
@@ -67,6 +67,7 @@
   color: var(--indent-color);
   margin: 0 auto 25px auto;
   max-width: 216px;
+  padding-left: 14px;
 }
 
 .hero__button {
@@ -102,6 +103,7 @@
   top: -65px;
   left: -10px;
   width: 82px;
+  pointer-events: none;
 }
 
 .hero__image-parrot-secondary {
@@ -109,22 +111,28 @@
   position: absolute;
   top: -50px;
   right: 10px;
+  pointer-events: none;
 }
 
 .hero__image-caracal {
   position: absolute;
   top: 280px;
-  left: -130px;
+  left: calc(50% - 160px);
+  transform: translateX(-50%);
   width: 250px;
   z-index: 1;
+  transition: transform 0.3s ease;
+  pointer-events: none;
 }
 
 .hero__image--leaf {
   position: absolute;
   top: 440px;
-  left: -200px;
-  width: 360px;
+  left: calc(50% - 200px);
+  transform: translateX(-50%);
+  width: 340px;
   z-index: 2;
+  pointer-events: none;
 }
 
 .hero__image-snake {
@@ -133,6 +141,8 @@
   right: 0;
   width: 190px;
   z-index: 1;
+  pointer-events: none;
+  transition: transform 0.3s ease;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -173,6 +183,7 @@
     font-size: 17px;
     margin: 0 auto 30px auto;
     max-width: 248px;
+    padding-left: 0;
   }
 
   .hero__image-parrot {
@@ -188,14 +199,14 @@
   .hero__image-caracal {
     top: unset;
     bottom: 0;
-    left: -90px;
+    left: calc(50% - 280px);
     width: 388px;
   }
 
   .hero__image--leaf {
     top: unset;
     bottom: -10px;
-    left: -316px;
+    left: calc(50% - 430px);
     width: 560px;
   }
 
@@ -265,14 +276,12 @@
   .hero__image-caracal {
     bottom: -30px;
     left: calc(50% - 350px);
-    transform: translateX(-50%);
     width: 434px;
   }
 
   .hero__image--leaf {
     bottom: -50px;
     left: calc(50% - 550px);
-    transform: translateX(-50%);
     width: 650px;
   }
 
