@@ -2,7 +2,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const props = {
     opacity: [1, 1],
-    duration: 2000,
+    duration: 3000,
+    delay: 500,
     easing: 'easeOutQuad',
   };
   // animation for .hero__image-caracal
