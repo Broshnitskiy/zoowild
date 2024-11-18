@@ -1,0 +1,9 @@
+.statistics {
+  position: relative;
+  z-index: 3;
+  border-radius: 25px;
+  background-color: var(--indent-color);
+  padding: 46px 0;
+  border-bottom: 1px solid rgba(91, 97, 83, 0.2);
+  margin-top: -20px;
+}

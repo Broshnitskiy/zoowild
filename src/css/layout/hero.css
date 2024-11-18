@@ -1,7 +1,7 @@
 .hero {
   overflow: hidden;
   padding-top: 196px;
-  min-height: 95vh;
+  min-height: 98vh;
   position: relative;
 
   background-image: url('../../img/hero/bg-mobile.webp');

@@ -13,6 +13,7 @@
 
 /* Layout styles */
 @import url('./layout/hero.css');
+@import url('./layout/statistics.css');
 
 /* components style */
 /* @import url('./header.css'); */
