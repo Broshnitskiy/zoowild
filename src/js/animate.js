@@ -1,4 +1,8 @@
-// animation for hero images
+/**
+  |============================
+  | animation for hero images
+  |============================
+*/
 document.addEventListener('DOMContentLoaded', () => {
   const props = {
     opacity: [1, 1],
@@ -20,3 +24,50 @@ document.addEventListener('DOMContentLoaded', () => {
     ...props,
   });
 });
+
+/**
+  |============================
+  | animation for statistics section
+  | increase numbers (counter)
+  |============================
+*/
+
+const numbers = document.querySelectorAll('.statistics__number');
+
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const number = entry.target;
+        const targetValue = parseInt(number.getAttribute('data-target'), 10);
+
+        const step = targetValue > 1000 ? 100 : 1;
+
+        anime({
+          targets: number,
+          innerHTML: [0, targetValue],
+          easing: 'easeOutExpo',
+          duration: 2000,
+          round: 1,
+          update: function (anim) {
+            const currentValue = Math.floor(anim.animations[0].currentValue);
+            const stepValue = Math.floor(currentValue / step) * step;
+
+            if (targetValue === 100) {
+              number.innerHTML = `${stepValue}%`;
+            } else if (targetValue > 1000) {
+              number.innerHTML = `${stepValue}<span aria-hidden="true" class="statistics__plus">+</span>`;
+            } else {
+              number.innerHTML = stepValue;
+            }
+          },
+        });
+
+        observer.unobserve(number);
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+numbers.forEach(number => observer.observe(number));

@@ -22,3 +22,18 @@ body {
   min-height: 100vh;
   background-color: var(--grand-color);
 }
+
+button {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  button:hover {
+    opacity: 0.8;
+  }
+}
