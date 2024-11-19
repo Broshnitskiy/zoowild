@@ -38,12 +38,13 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         const number = entry.target;
         const targetValue = parseInt(number.getAttribute('data-target'), 10);
+        const startValue = parseInt(number.textContent, 10);
 
-        const step = targetValue > 1000 ? 100 : 1;
+        const step = targetValue > 1000 ? 10 : 1;
 
         anime({
           targets: number,
-          innerHTML: [0, targetValue],
+          innerHTML: [startValue, targetValue],
           easing: 'easeOutExpo',
           duration: 2000,
           round: 1,
