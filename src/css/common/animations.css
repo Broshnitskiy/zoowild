@@ -1,5 +1,4 @@
 .fade-in-up {
-  transform: translateY(20px);
   animation: fadeInUp 3s forwards;
 }
 
