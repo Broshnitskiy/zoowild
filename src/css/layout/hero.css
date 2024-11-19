@@ -165,7 +165,7 @@
   .hero {
     padding-top: 143px;
     background-image: url('../../img/hero/bg-tablet.webp');
-    height: calc(100vh + 25px);
+    height: calc(100vh + 20px);
   }
 
   .hero__title-wrapper {
