@@ -1,15 +1,13 @@
 .fade-in-up {
   transform: translateY(20px);
-  animation: fadeInUp 2s forwards;
+  animation: fadeInUp 3s forwards;
 }
 
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
   }
 }
