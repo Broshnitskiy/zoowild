@@ -1,0 +1,15 @@
+.marker {
+  color: var(--secondary-color);
+}
+
+.marker__index {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 105%;
+  letter-spacing: -0.02em;
+}
+
+.marker__title {
+  font-weight: 400;
+  font-size: 14px;
+}

@@ -1,0 +1,110 @@
+.more-about {
+  position: relative;
+  padding-top: 45px;
+}
+
+.more-about__marker {
+  margin-bottom: 20px;
+}
+
+.more-about__content {
+  margin-bottom: 20px;
+}
+
+.more-about__text {
+  font-family: var(--main-font);
+  font-size: 26px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.more-about__text.more-about__text--position {
+  margin-left: 47px;
+}
+
+.more-about__text.more-about__text--color {
+  color: var(--primary-color);
+}
+
+.more-about__logo {
+  width: 132px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.more-about__description {
+  font-size: 18px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+
+.more-about__picture {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.more-about__details {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.more-about__details-title {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.more-about__details-text {
+  font-family: var(--font-family);
+  font-size: 15px;
+  line-height: 115%;
+}
+
+.more-about__details-highlight {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.more-about__details-highlight-2 {
+  font-weight: 600;
+}
+
+.more-about__company {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.more-about__company-text {
+  font-size: 16px;
+  line-height: 130%;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  max-width: 227px;
+}
+
+.more-about__company-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  background-color: transparent;
+  border: none;
+}
+
+.more-about__company-btn-text {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
