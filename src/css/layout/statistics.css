@@ -115,7 +115,7 @@
 .statistics__paw-1 {
   position: absolute;
   top: 65px;
-  left: calc(50% + 65px);
+  left: calc(50% + 95px);
   transform: translateX(-50%) rotate(20deg);
 }
 
