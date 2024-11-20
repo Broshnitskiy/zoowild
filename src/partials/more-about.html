@@ -107,21 +107,21 @@
     </div>
 
     <img
-      class="more-about__paw"
+      class="more-about__paw-1"
       loading="lazy"
       src="img/svg/paw.svg"
       alt="Лапка"
       aria-hidden="true"
     />
     <img
-      class="more-about__paw"
+      class="more-about__paw-2"
       loading="lazy"
       src="img/svg/paw.svg"
       alt="Лапка"
       aria-hidden="true"
     />
     <img
-      class="more-about__paw"
+      class="more-about__paw-3"
       loading="lazy"
       src="img/svg/paw.svg"
       alt="Лапка"
@@ -134,11 +134,17 @@
       <img
         class="more-about__clinic-logo"
         loading="lazy"
-        src=""
+        src="img/logo_2.webp"
         alt="Лого клініки"
+        width="80"
+        height="70"
       />
       <h3 class="more-about__clinic-title">
-        Також у нас є ветеринарна клініка, яка увійшла у
+        <span class="more-about__clinic-title-top">Також у нас</span>
+        <span class="more-about__clinic-title__accent"
+          >є ветеринарна клініка</span
+        >
+        <span class="more-about__clinic-title-bottom">, яка увійшла у</span>
       </h3>
 
       <div class="more-about__clinic-top">
@@ -155,35 +161,68 @@
         <img
           class="more-about__clinic-button-icon"
           loading="lazy"
-          src=""
+          src="img/svg/snake.svg"
           alt="Лого змії"
+          width="39"
+          height="39"
         />
         <p class="more-about__clinic-button-text">Відвідати клініку</p>
         <img
-          class="more-about__clinic-button-icon"
+          class="more-about__clinic-button-img"
           loading="lazy"
-          src=""
+          src="img/more-about/small-dog.webp"
           alt="Песик"
+          width="44"
+          height="69"
         />
       </button>
 
       <img
-        class="more-about__clinic-paw"
+        class="more-about__clinic-paw-1"
         loading="lazy"
         src="img/svg/paw.svg"
         alt="Лапка"
         aria-hidden="true"
       />
       <img
-        class="more-about__clinic-paw"
+        class="more-about__clinic-paw-2"
         loading="lazy"
         src="img/svg/paw.svg"
         alt="Лапка"
         aria-hidden="true"
       />
-    </div>
 
-    <img class="more-about__clinic-image" loading="lazy" src="" alt="Собака" />
-    <img class="more-about__clinic-image" loading="lazy" src="" alt="Каракал" />
+      <picture class="more-about__clinic-image-picture">
+        <source
+          media="(min-width: 768px)"
+          srcset="img/more-about/dog-desk.webp 1x"
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="img/more-about/dog-mob.webp 1x"
+          type="image/webp"
+        />
+        <img
+          class="more-about__clinic-image-1"
+          loading="lazy"
+          src="img/more-about/dog-desk.webp"
+          alt="Собака"
+        />
+      </picture>
+
+      <img
+        class="more-about__clinic-image-2-desk"
+        loading="lazy"
+        src="img/more-about/carakal-more-desk.webp"
+        alt="Каракал"
+      />
+      <img
+        class="more-about__clinic-image-2-mob"
+        loading="lazy"
+        src="img/more-about/carakal-more-mob.webp"
+        alt="Каракал"
+      />
+    </div>
   </section>
 </section>
