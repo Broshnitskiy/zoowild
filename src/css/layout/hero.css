@@ -120,8 +120,7 @@
 .hero__image-caracal {
   position: absolute;
   top: 280px;
-  left: calc(50% - 160px);
-  transform: translateX(-50%);
+  left: calc(50% - 285px);
   width: 250px;
   z-index: 1;
   pointer-events: none;
@@ -132,9 +131,8 @@
 .hero__image--leaf {
   position: absolute;
   top: 440px;
-  left: calc(50% - 200px);
-  transform: translateX(-50%);
-  width: 340px;
+  left: calc(50% - 358px);
+  width: 320px;
   z-index: 2;
   pointer-events: none;
 }
@@ -204,14 +202,14 @@
   .hero__image-caracal {
     top: unset;
     bottom: 0;
-    left: calc(50% - 280px);
+    left: calc(50% - 474px);
     width: 388px;
   }
 
   .hero__image--leaf {
     top: unset;
     bottom: -10px;
-    left: calc(50% - 430px);
+    left: calc(50% - 710px);
     width: 560px;
   }
 
@@ -281,13 +279,13 @@
 
   .hero__image-caracal {
     bottom: -30px;
-    left: calc(50% - 350px);
+    left: calc(50% - 567px);
     width: 434px;
   }
 
   .hero__image--leaf {
     bottom: -50px;
-    left: calc(50% - 550px);
+    left: calc(50% - 875px);
     width: 650px;
   }
 

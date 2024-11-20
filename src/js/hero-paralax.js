@@ -9,10 +9,10 @@ container.addEventListener('mousemove', function (event) {
     const moveX = (event.clientX / window.innerWidth) * 20 - 10;
     const moveY = (event.clientY / window.innerHeight) * 20 - 10;
 
-    imageCaracal.style.transform = `translateX(-50%) translate(${moveX}px, ${moveY}px)`;
+    imageCaracal.style.transform = `translate(${moveX}px, ${moveY}px)`;
     imageSnake.style.transform = `translate(${-moveX}px, ${-moveY}px)`;
   } else {
-    imageCaracal.style.transform = 'translateX(-50%)';
+    imageCaracal.style.transform = 'translate(0px, 0px)';
     imageSnake.style.transform = 'translate(0px, 0px)';
   }
 });

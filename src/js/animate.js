@@ -13,7 +13,7 @@ window.onload = () => {
   // animation for .hero__image-caracal
   anime({
     targets: '.hero__image-caracal',
-    translateX: ['-200%', '-50%'],
+    translateX: ['-100%', '0'],
     ...props,
   });
 
