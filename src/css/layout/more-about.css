@@ -115,20 +115,42 @@
 
 .more-about__paw-1 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 20px;
+  right: 10%;
+  transform: rotate(-25deg);
 }
 
 .more-about__paw-2 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 70px;
+  left: 20px;
 }
 
 .more-about__paw-3 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 58%;
+  left: 8%;
+}
+
+.more-about__paw-4 {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: rotate(-25deg);
+}
+
+.more-about__paw-5 {
+  position: absolute;
+  top: 135px;
+  right: 35px;
+}
+
+.more-about__paw-6 {
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  width: 40px;
+  transform: rotate(-30deg);
 }
 
 .more-about__clinic {
@@ -242,14 +264,24 @@
 
 .more-about__clinic-paw-1 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 16px;
+  left: 20px;
+  width: 30px;
 }
 
 .more-about__clinic-paw-2 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 20px;
+  right: 10%;
+  width: 43px;
+  transform: rotate(-20deg);
+}
+
+.more-about__clinic-paw-3 {
+  position: absolute;
+  top: 210px;
+  left: 35px;
+  width: 30px;
 }
 
 .more-about__clinic-image-2-desk {
@@ -258,7 +290,7 @@
 
 .more-about__clinic-image-2-mob {
   position: absolute;
-  right: -18px;
+  left: calc(50% + 35px);
   top: 140px;
   width: 143px;
 }
