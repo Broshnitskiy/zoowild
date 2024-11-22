@@ -1,23 +1,152 @@
-<section class="category">
-  <div class="container">
-    <div class="marker more-about__marker">
+<section class="category" aria-labelledby="category-title">
+  <div class="category__container container">
+    <div class="category__marker marker">
       <p class="marker__index">02 /</p>
       <p class="marker__title">Категорії товарів</p>
     </div>
-  </div>
 
-  <h2><span>Zoowild</span><span>має найбільший</span><span>магазин</span></h2>
+    <h2 id="category-title" class="category__heading">
+      <span class="category__heading-part-1">Zoowild</span>
+      <span class="category__heading-part-2">має найбільший</span>
+      <span class="category__heading-part-3">магазин</span>
+    </h2>
 
-  <p>Якісних та сертифікованих товарів для будь-яких тварин та їх потреб</p>
+    <p class="category__description">
+      Якісних та сертифікованих товарів для будь-яких тварин та їх потреб
+    </p>
 
-  <div>
-    <div></div>
+    <div class="category__cards">
+      <div class="category__card-1">
+        <p class="category__card-info category__card-info-1-width">6 видів</p>
+        <h3 class="category__card-title">Артезіанська очищена вода</h3>
+        <p class="category__card-description">
+          Для будь-яких тварин з корисними властивостями
+        </p>
+        <picture class="category__card-image">
+          <source
+            media="(min-width: 1200px)"
+            srcset="img/category/bottle-water-desk.webp 1x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/category/bottle-water-tab.webp 1x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="img/category/bottle-water-tab.webp 1x"
+            type="image/webp"
+          />
+          <img
+            class="category__card-main-image"
+            loading="lazy"
+            src="img/category/bottle-water-desk.webp"
+            alt="Бутилка води"
+          />
+        </picture>
+        <img
+          class="category__card-arrow"
+          src="img/svg/arrow-btn-slight.svg"
+          alt="Перейти"
+        />
+      </div>
 
-    <a href="#">
-      <div>
-        <img src="" alt="іконка змії" />
-        <p>Усі розділи</p>
+      <div class="category__card-2">
+        <p class="category__card-info category__card-info-2-width">
+          200+ видів
+        </p>
+        <h3 class="category__card-title-2">Для котів</h3>
+        <img
+          class="category__card-2-main-image"
+          src="img/category/cart-cat.webp"
+          alt="Кіт"
+        />
+        <img
+          class="category__card-2-main-image-2"
+          src="img/category/portion.webp"
+          alt="Корм"
+        />
+        <img
+          class="category__card-arrow"
+          src="img/svg/arrow-btn-slight.svg"
+          alt="Перейти"
+        />
+      </div>
+
+      <div class="category__card-3">
+        <p class="category__card-info category__card-info-3-width">
+          150+ видів
+        </p>
+        <h3 class="category__card-title-3">Для собак</h3>
+        <img
+          class="category__card-3-main-image"
+          src="img/category/cart-dog.webp"
+          alt="Собака"
+        />
+        <img
+          class="category__card-arrow"
+          src="img/svg/arrow-btn-slight.svg"
+          alt="Перейти"
+        />
+      </div>
+
+      <div class="category__card-4">
+        <p class="category__card-info category__card-info-4-width">
+          260+ видів
+        </p>
+        <h3 class="category__card-title-4">Для всіх інших тварин</h3>
+        <img
+          class="category__card-4-main-image"
+          src="img/hero/parrot-2.webp"
+          alt="Папуга"
+        />
+        <img
+          class="category__card-4-main-image-2"
+          src="img/category/snake.webp"
+          alt="Змія"
+        />
+        <img
+          class="category__card-arrow"
+          src="img/svg/arrow-btn-slight.svg"
+          alt="Перейти"
+        />
+      </div>
+    </div>
+
+    <a href="#" class="category__link" aria-label="Перейти до всіх розділів">
+      <div class="category__link-content">
+        <img
+          class="category__link-icon"
+          src="img/svg/snake.svg"
+          alt="Іконка змії"
+        />
+        <p class="category__link-text">Усі розділи</p>
       </div>
     </a>
+
+    <div class="category__decorations">
+      <img
+        class="category__decoration"
+        loading="lazy"
+        src="img/svg/paw.svg"
+        alt=""
+        aria-hidden="true"
+      />
+      <img
+        class="category__decoration"
+        loading="lazy"
+        src="img/svg/paw.svg"
+        alt=""
+        aria-hidden="true"
+      />
+      <img
+        class="category__decoration"
+        loading="lazy"
+        src="img/svg/paw.svg"
+        alt=""
+        aria-hidden="true"
+      />
+    </div>
   </div>
 </section>
