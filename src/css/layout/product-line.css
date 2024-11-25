@@ -467,4 +467,68 @@
   .product-card__price--current-currency {
     font-size: 18px;
   }
+
+  .product-card-side-group {
+    padding-top: 104px;
+    gap: 12px;
+  }
+
+  .product-card-2,
+  .product-card-3 {
+    gap: 28px;
+    border-radius: 20px;
+  }
+
+  .product-card__image__wrapper {
+    border-radius: 20px;
+  }
+
+  .product-card-2__info,
+  .product-card-3__info {
+    flex: 1 1 50%;
+    padding: 25px 16px 12px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-card-2__name,
+  .product-card-3__name {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .product-card__description {
+    font-size: 15px;
+    word-break: normal;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+    height: 80px;
+  }
+
+  .product-card-1__prices-wrapper {
+    margin-top: auto;
+  }
+
+  .product-card__prices {
+    gap: 12px;
+  }
+
+  .product-card__price--old {
+    font-size: 15px;
+  }
+
+  .product-card__icon-1 {
+    width: 26px;
+  }
+
+  .product-card__icon-2 {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .product-card-side-group {
+    padding-top: 126px;
+  }
 }
