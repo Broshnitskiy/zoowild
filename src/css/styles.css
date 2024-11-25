@@ -15,7 +15,10 @@
 @import url('./layout/statistics.css');
 @import url('./layout/more-about.css');
 @import url('./layout/category.css');
+@import url('./layout/product-line.css');
 @import url('./layout/partners.css');
+@import url('./layout/why-we.css');
 
 /* components style */
 @import url('./components/marker.css');
+@import url('./components/button.css');
