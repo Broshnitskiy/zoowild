@@ -1,20 +1,21 @@
-<section class="why-we">
-  <div class="container">
+<section class="why-we" role="region" aria-labelledby="why-we-title">
+  <div class="why-we__container">
     <div class="why-we__marker marker">
       <p class="marker__index" aria-hidden="true">09 /</p>
       <p class="marker__title">Чому саме ми?</p>
     </div>
 
-    <h2>
-      <span>Обираючи нас,</span>
-      <span>ви отримуєте</span>
+    <h2 id="why-we-title" class="why-we__title">
+      <span class="why-we__title-part">Обираючи нас,</span>
+      <span class="why-we__title-part">ви отримуєте</span>
       <svg
-        class="why-we__title__dot"
+        class="why-we__title-dot"
         width="51"
         height="34"
         viewBox="0 0 51 34"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
       >
         <circle cx="25.4418" cy="25.0082" r="8.33635" fill="#A5BB7D" />
         <circle cx="42.1117" cy="25.0082" r="8.33635" fill="#A5BB7D" />
@@ -23,14 +24,83 @@
         <circle cx="42.1117" cy="8.33635" r="8.33635" fill="#A5BB7D" />
         <circle cx="8.76799" cy="8.33635" r="8.33635" fill="#A5BB7D" />
       </svg>
-
-      <span>якісне</span>
-      <span>обслуговування</span>
+      <span class="why-we__title-part">якісне</span>
+      <span class="why-we__title-part">обслуговування</span>
     </h2>
 
-    <p>
+    <p class="why-we__description">
       Перевірені товари та швидку доставку. Ми турбуємося про здоров'я ваших
       улюбленців так само, як і ви!
     </p>
+
+    <div class="why-we__benefits">
+      <div class="why-we__benefit">
+        <p class="why-we__benefit-number">16</p>
+        <p class="why-we__benefit-text">Років на ринку ветеринарії</p>
+      </div>
+
+      <div class="why-we__benefit">
+        <p class="why-we__benefit-title">Безкоштовна доставка</p>
+        <p class="why-we__benefit-subtitle">На сумму від 1999грн</p>
+      </div>
+
+      <div class="why-we__benefit">
+        <p class="why-we__benefit-title">Широкий вибір препаратів</p>
+        <p class="why-we__benefit-subtitle">Для будь-якої тварини</p>
+      </div>
+
+      <div class="why-we__benefit">
+        <p class="why-we__benefit-title">Якість та сертифіковані товари</p>
+        <p class="why-we__benefit-subtitle">
+          Гарантія безпеки для вашого улюбленця
+        </p>
+      </div>
+
+      <div class="why-we__benefit">
+        <img
+          class="why-we__benefit-image"
+          loading="lazy"
+          src=""
+          alt="Каракал"
+        />
+        <p class="why-we__benefit-caption">Брати будете?</p>
+      </div>
+
+      <img class="why-we__benefit-image" loading="lazy" src="" alt="Попугай" />
+    </div>
+
+    <a href="" class="why-we__link" aria-label="Перейти до каталогу товарів">
+      <div class="why-we__link-content">
+        <img
+          loading="lazy"
+          class="why-we__link-icon"
+          src="img/svg/snake.svg"
+          alt="Іконка змії"
+        />
+        <p class="why-we__link-text">До каталогу</p>
+      </div>
+    </a>
   </div>
+
+  <img
+    class="why-we__decor-1"
+    src="img/svg/paw.svg"
+    alt=""
+    aria-hidden="true"
+    loading="lazy"
+  />
+  <img
+    class="why-we__decor-2"
+    src="img/svg/paw.svg"
+    alt=""
+    aria-hidden="true"
+    loading="lazy"
+  />
+  <img
+    class="why-we__decor-3"
+    src="img/svg/paw.svg"
+    alt=""
+    aria-hidden="true"
+    loading="lazy"
+  />
 </section>
