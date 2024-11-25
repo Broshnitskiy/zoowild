@@ -1,5 +1,6 @@
 .product-line {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .product-line__container {
@@ -251,6 +252,7 @@
 @media only screen and (min-width: 768px) {
   .product-line {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .product-line__marker {
@@ -381,6 +383,7 @@
 @media only screen and (min-width: 1200px) {
   .product-line {
     padding-top: 90px;
+    padding-bottom: 90px;
   }
 
   .product-line__marker {

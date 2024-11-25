@@ -1,15 +1,20 @@
 <section class="top-selling" aria-labelledby="top-selling-title">
-  <div class="top-selling__container">
+  <div class="container top-selling__container">
     <div class="top-selling__marker marker">
       <p class="marker__index">04 /</p>
-      <p class="marker__title">Самий Топ продажів</p>
+      <p class="marker__title">Самий ТОП продажів</p>
     </div>
+
     <h2 id="top-selling-title" class="top-selling__title">
-      <span>Кото-травичка</span>
-      <span>- найпопулярніший товар</span>
-      <span>для котів</span>
-      <span>та інших тварин</span>
+      <span class="top-selling__title__part-1">Кото-травичка</span>
+      <span class="top-selling__title__part-2">- найпопулярніший товар</span>
+      <span class="top-selling__title__part-3">для котів</span>
+      <span class="top-selling__title__part-4">та інших тварин</span>
     </h2>
+
+    <p class="top-selling__description">
+      Який завжди беруть своїм домашнім друзям
+    </p>
 
     <picture class="top-selling__image">
       <source
@@ -34,10 +39,6 @@
         alt="Кіт з короною"
       />
     </picture>
-
-    <p class="top-selling__description">
-      Який завжди беруть своїм домашнім друзям
-    </p>
 
     <a href="#" class="top-selling__catalog-link">
       <div class="top-selling__actions">
@@ -69,30 +70,76 @@
     </a>
 
     <div class="top-selling__additional">
-      <img
-        class="top-selling__icon"
-        loading="lazy"
-        src="img/svg/favourite.svg"
-        alt="Іконка серця"
-      />
+      <button type="button" class="top-selling__icon__favourite-btn">
+        <img
+          class="top-selling__icon"
+          loading="lazy"
+          src="img/svg/favourite.svg"
+          alt="Іконка серця"
+        />
+      </button>
+
       <div class="top-selling__info">
-        <p class="top-selling__info-title"><span></span></p>
-        <p class="top-selling__info-text"></p>
+        <p class="top-selling__info-title">109<span>₴</span></p>
+        <p class="top-selling__info-text">-25%</p>
       </div>
 
       <div class="top-selling__purchase">
-        <button class="top-selling__purchase-button">
-          <img class="top-selling__purchase-icon" src="" alt="Іконка змії" />
+        <button type="button" class="top-selling__purchase-button">
+          <img
+            loading="lazy"
+            class="top-selling__purchase-icon"
+            src="img/svg/snake.svg"
+            alt="Іконка змії"
+          />
           <p class="top-selling__purchase-text">Придбати зараз</p>
         </button>
-        <img
-          class="top-selling__cart-icon"
-          loading="lazy"
-          src="img/svg/card.svg"
-          alt="Іконка кошика"
-        />
+        <button type="button" class="top-selling__cart-btn">
+          <img
+            class="top-selling__cart-icon"
+            loading="lazy"
+            src="img/svg/card.svg"
+            alt="Іконка кошика"
+          />
+        </button>
       </div>
     </div>
+
+    <img
+      class="top-selling__paw-1"
+      src="img/svg/paw-2.svg"
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+    />
+    <img
+      class="top-selling__paw-2"
+      src="img/svg/paw-2.svg"
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+    />
+    <img
+      class="top-selling__paw-3"
+      src="img/svg/paw-2.svg"
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+    />
+    <img
+      class="top-selling__paw-4"
+      src="img/svg/paw-2.svg"
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+    />
+    <img
+      class="top-selling__paw-5"
+      src="img/svg/paw-2.svg"
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+    />
   </div>
 
   <img
@@ -100,41 +147,5 @@
     loading="lazy"
     src="img/top-selling/cat.webp"
     alt="Кіт"
-  />
-
-  <img
-    class="top-selling__paw-1"
-    src="img/svg/paw.svg"
-    alt=""
-    aria-hidden="true"
-    loading="lazy"
-  />
-  <img
-    class="top-selling__paw-2"
-    src="img/svg/paw.svg"
-    alt=""
-    aria-hidden="true"
-    loading="lazy"
-  />
-  <img
-    class="top-selling__paw-3"
-    src="img/svg/paw.svg"
-    alt=""
-    aria-hidden="true"
-    loading="lazy"
-  />
-  <img
-    class="top-selling__paw-4"
-    src="img/svg/paw.svg"
-    alt=""
-    aria-hidden="true"
-    loading="lazy"
-  />
-  <img
-    class="top-selling__paw-5"
-    src="img/svg/paw.svg"
-    alt=""
-    aria-hidden="true"
-    loading="lazy"
   />
 </section>

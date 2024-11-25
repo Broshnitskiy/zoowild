@@ -1,7 +1,7 @@
 .category__link {
   display: block;
   opacity: 1;
-  transition: opacity 300 ease;
+  transition: opacity 0.3s ease;
 }
 
 .category__link:hover {
