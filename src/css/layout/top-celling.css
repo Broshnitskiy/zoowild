@@ -238,7 +238,6 @@
 
   .top-selling__title {
     font-size: 48px;
-
     max-width: unset;
     margin-bottom: 0;
   }
@@ -248,7 +247,7 @@
   }
 
   .top-selling__title__part-2 {
-    color: var(--secondary-color);
+    display: block;
   }
 
   .top-selling__title__part-3,
@@ -351,5 +350,109 @@
 
   .top-selling__icon {
     width: 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .top-selling {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .top-selling__marker {
+    margin-bottom: -40px;
+  }
+
+  .top-selling__title {
+    font-size: 64px;
+    max-width: unset;
+    margin-bottom: 30px;
+  }
+
+  .top-selling__title__part-1 {
+    margin-left: 370px;
+  }
+
+  .top-selling__title__part-2 {
+    margin-left: 157px;
+  }
+
+  .top-selling__title__part-3,
+  .top-selling__title__part-4 {
+    display: block;
+    margin-left: 370px;
+  }
+
+  .top-selling__description {
+    font-size: 28px;
+    max-width: 310px;
+    margin-left: 370px;
+  }
+
+  .top-selling__image {
+    margin-top: -5px;
+  }
+
+  .top-selling__catalog-link {
+    right: 70px;
+    top: 500px;
+  }
+
+  .top-selling__catalog-text {
+    font-size: 21px;
+    line-height: 66%;
+  }
+
+  .top-selling__catalog-icon {
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+  }
+
+  .top-selling__decoration {
+    width: 382px;
+    top: 140px;
+    right: -60px;
+  }
+
+  .top-selling__additional {
+    bottom: 500px;
+    left: 65px;
+    right: unset;
+    width: 201px;
+    height: 125px;
+    transform: rotate(0);
+    padding: 19px 10px 5px 8px;
+  }
+
+  .top-selling__purchase-button {
+    gap: 4px;
+  }
+
+  .top-selling__info {
+    gap: 0;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 6px;
+  }
+
+  .top-selling__info-title {
+    padding-left: 9px;
+  }
+
+  .top-selling__icon__favourite-btn {
+    left: 15px;
+    top: 5px;
+  }
+
+  .top-selling__icon {
+    width: 17px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .top-selling__additional {
+    bottom: 630px;
+    left: 65px;
   }
 }
