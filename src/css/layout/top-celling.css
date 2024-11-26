@@ -224,3 +224,132 @@
   right: 16px;
   bottom: -40px;
 }
+
+@media only screen and (min-width: 768px) {
+  .top-selling {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .top-selling__marker {
+    max-width: 100px;
+    margin-bottom: -40px;
+  }
+
+  .top-selling__title {
+    font-size: 48px;
+
+    max-width: unset;
+    margin-bottom: 0;
+  }
+
+  .top-selling__title__part-1 {
+    margin-left: 156px;
+  }
+
+  .top-selling__title__part-2 {
+    color: var(--secondary-color);
+  }
+
+  .top-selling__title__part-3,
+  .top-selling__title__part-4 {
+    display: block;
+    margin-left: 156px;
+  }
+
+  .top-selling__description {
+    font-size: 20px;
+    max-width: 250px;
+    margin-left: 156px;
+  }
+
+  .top-selling__image {
+    margin-top: -20px;
+  }
+
+  .top-selling__catalog-link {
+    right: 35px;
+    top: 320px;
+    bottom: unset;
+  }
+
+  .top-selling__catalog-icon {
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+  }
+
+  .top-selling__decoration {
+    width: 220px;
+    top: 120px;
+    right: -30px;
+  }
+
+  .top-selling__additional {
+    bottom: -38px;
+    left: unset;
+    right: 60px;
+    border-radius: 25px;
+    width: 201px;
+    height: 121px;
+    transform: rotate(-18deg);
+    padding: 14px 10px 4px 10px;
+  }
+
+  .top-selling__purchase-button {
+    border-radius: 43px;
+    width: 147px;
+    height: 28px;
+    gap: 4px;
+  }
+
+  .top-selling__purchase-icon {
+    margin-left: 2px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .top-selling__purchase-text {
+    font-size: 15px;
+  }
+
+  .top-selling__purchase {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .top-selling__cart-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .top-selling__info {
+    gap: 0;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 6px;
+  }
+
+  .top-selling__info-title {
+    font-size: 64px;
+  }
+
+  .top-selling__info-title > span {
+    font-size: 55px;
+  }
+
+  .top-selling__info-text {
+    font-size: 23px;
+  }
+
+  .top-selling__icon__favourite-btn {
+    right: unset;
+    left: 12px;
+    top: 2px;
+    padding: 5px;
+  }
+
+  .top-selling__icon {
+    width: 15px;
+  }
+}
