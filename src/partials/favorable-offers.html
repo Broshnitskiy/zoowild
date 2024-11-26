@@ -6,10 +6,10 @@
     </div>
 
     <h2 id="offers-title" class="offers__title">
-      <span class="offers__title-part">Спеціальні пропозиції</span>
-      <span class="offers__title-part">та якісні товари</span>
-      <span class="offers__title-part">для ваших</span>
-      <span class="offers__title-part">пітомців з вигідними</span>
+      <span class="offers__title-part-1">Спеціальні пропозиції</span>
+      <span class="offers__title-part-2">та якісні товари</span>
+      <span class="offers__title-part-3">для ваших</span>
+      <span class="offers__title-part-4">пітомців з вигідними</span>
     </h2>
 
     <p class="offers__subtitle">
@@ -18,12 +18,12 @@
 
     <div class="offers__pagination">
       <p class="offers__pagination-text">
-        01/<span class="offers__pagination-total">03</span>
+        01<span class="offers__pagination-total">/03</span>
       </p>
       <div class="offers__pagination-controls">
         <button
           type="button"
-          class="offers__pagination-button"
+          class="offers__pagination-button offers__pagination-button--left"
           aria-label="Попередня пропозиція"
         >
           <svg
@@ -42,7 +42,7 @@
         </button>
         <button
           type="button"
-          class="offers__pagination-button"
+          class="offers__pagination-button offers__pagination-button--right"
           aria-label="Наступна пропозиція"
         >
           <svg
@@ -63,72 +63,75 @@
     </div>
 
     <div class="offers__item">
-      <h3 class="offers__item-title">Найкраще сіно для гризунів</h3>
-      <svg
-        class="offers__item-icon"
-        width="30"
-        height="29"
-        viewBox="0 0 30 29"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <rect
-          x="1.18975"
-          y="0.60967"
-          width="27.8827"
-          height="27.3776"
-          rx="13.6888"
-          stroke="#A5BB7D"
-          stroke-width="0.559185"
-        />
-        <path
-          d="M10.6548 18.21C10.4988 18.366 10.4988 18.6189 10.6548 18.7749C10.8108 18.9308 11.0637 18.9308 11.2197 18.7749L10.6548 18.21ZM19.7245 10.1046C19.7245 9.88399 19.5457 9.70517 19.3251 9.70517L15.7303 9.70517C15.5098 9.70517 15.3309 9.88399 15.3309 10.1046C15.3309 10.3252 15.5098 10.504 15.7303 10.504H18.9257V13.6993C18.9257 13.9199 19.1045 14.0988 19.3251 14.0988C19.5457 14.0988 19.7245 13.9199 19.7245 13.6993L19.7245 10.1046ZM11.2197 18.7749L19.6075 10.387L19.0427 9.82215L10.6548 18.21L11.2197 18.7749Z"
-          fill="#A5BB7D"
-        />
-      </svg>
+      <div class="offers__item-image__wrapper">
+        <h3 class="offers__item-title">Найкраще сіно для гризунів</h3>
 
-      <img
-        class="offers__item-image"
-        loading="lazy"
-        src=""
-        alt="Картинка сіна"
-      />
+        <img
+          class="offers__item-image"
+          loading="lazy"
+          src="img/favorable-offers/hay.webp"
+          alt="Картинка сіна"
+        />
+
+        <svg
+          class="offers__item-icon"
+          width="30"
+          height="29"
+          viewBox="0 0 30 29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <rect
+            x="1.18975"
+            y="0.60967"
+            width="27.8827"
+            height="27.3776"
+            rx="13.6888"
+            stroke="#A5BB7D"
+            stroke-width="0.559185"
+          />
+          <path
+            d="M10.6548 18.21C10.4988 18.366 10.4988 18.6189 10.6548 18.7749C10.8108 18.9308 11.0637 18.9308 11.2197 18.7749L10.6548 18.21ZM19.7245 10.1046C19.7245 9.88399 19.5457 9.70517 19.3251 9.70517L15.7303 9.70517C15.5098 9.70517 15.3309 9.88399 15.3309 10.1046C15.3309 10.3252 15.5098 10.504 15.7303 10.504H18.9257V13.6993C18.9257 13.9199 19.1045 14.0988 19.3251 14.0988C19.5457 14.0988 19.7245 13.9199 19.7245 13.6993L19.7245 10.1046ZM11.2197 18.7749L19.6075 10.387L19.0427 9.82215L10.6548 18.21L11.2197 18.7749Z"
+            fill="#A5BB7D"
+          />
+        </svg>
+      </div>
 
       <p class="offers__item-description">
         Найкраще сіно для ваших маленьких друзів! Натуральне, свіже і поживне —
         ідеальний вибір для здоров'я і гарного самопочуття гризунів. Забезпечте
         свого улюбленця збалансованим харчуванням кожного дня!
       </p>
+    </div>
 
-      <div class="offers__item-link">
-        <a href="" class="offers__item-link-anchor">
-          <p class="offers__item-link-text">Більше акцій</p>
-          <svg
-            class="offers__item-link-icon"
-            width="26"
-            height="26"
-            viewBox="0 0 26 26"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <rect
-              x="0.75"
-              y="0.75"
-              width="24.5"
-              height="24.5"
-              rx="12.25"
-              stroke="#A5BB7D"
-              stroke-width="1.5"
-            />
-            <path
-              d="M8.13666 16.8027C7.84377 17.0956 7.84377 17.5704 8.13666 17.8633C8.42956 18.1562 8.90443 18.1562 9.19732 17.8633L8.13666 16.8027ZM18.0837 8.66634C18.0837 8.25213 17.7479 7.91634 17.3337 7.91634L10.5837 7.91634C10.1694 7.91634 9.83366 8.25213 9.83366 8.66634C9.83366 9.08056 10.1694 9.41634 10.5837 9.41634L16.5837 9.41634L16.5837 15.4163C16.5837 15.8306 16.9194 16.1663 17.3337 16.1663C17.7479 16.1663 18.0837 15.8306 18.0837 15.4163L18.0837 8.66634ZM9.19732 17.8633L18.3637 8.69698L17.303 7.63632L8.13666 16.8027L9.19732 17.8633Z"
-              fill="#A5BB7D"
-            />
-          </svg>
-        </a>
-      </div>
+    <div class="offers__item-link">
+      <a href="#" class="offers__item-link-anchor">
+        <p class="offers__item-link-text">Більше акцій</p>
+        <svg
+          class="offers__item-link-icon"
+          width="26"
+          height="26"
+          viewBox="0 0 26 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <rect
+            x="0.75"
+            y="0.75"
+            width="24.5"
+            height="24.5"
+            rx="12.25"
+            stroke="#A5BB7D"
+            stroke-width="1.5"
+          />
+          <path
+            d="M8.13666 16.8027C7.84377 17.0956 7.84377 17.5704 8.13666 17.8633C8.42956 18.1562 8.90443 18.1562 9.19732 17.8633L8.13666 16.8027ZM18.0837 8.66634C18.0837 8.25213 17.7479 7.91634 17.3337 7.91634L10.5837 7.91634C10.1694 7.91634 9.83366 8.25213 9.83366 8.66634C9.83366 9.08056 10.1694 9.41634 10.5837 9.41634L16.5837 9.41634L16.5837 15.4163C16.5837 15.8306 16.9194 16.1663 17.3337 16.1663C17.7479 16.1663 18.0837 15.8306 18.0837 15.4163L18.0837 8.66634ZM9.19732 17.8633L18.3637 8.69698L17.303 7.63632L8.13666 16.8027L9.19732 17.8633Z"
+            fill="#A5BB7D"
+          />
+        </svg>
+      </a>
     </div>
 
     <img
