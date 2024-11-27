@@ -187,7 +187,6 @@
 
   .offers__marker {
     margin-bottom: -50px;
-    max-width: 90px;
   }
 
   .offers__title {
@@ -275,5 +274,110 @@
   .offers__swiper {
     overflow: hidden;
     margin-bottom: 18px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .offers {
+    padding-top: 90px;
+  }
+
+  .offers__marker {
+    margin-bottom: -50px;
+  }
+
+  .offers__title {
+    font-size: 64px;
+    margin-bottom: 30px;
+  }
+
+  .offers__title-part-1 {
+    margin-left: 368px;
+  }
+
+  .offers__title-part-2 {
+    margin-left: 156px;
+  }
+
+  .offers__title-part-4 {
+    margin-left: 368px;
+  }
+
+  .offers__subtitle {
+    font-size: 28px;
+    margin-left: 368px;
+    margin-bottom: 0;
+    max-width: 338px;
+  }
+
+  .offers__pagination__counter {
+    margin-bottom: 6px;
+  }
+
+  .offers__pagination-text {
+    font-size: 24px;
+  }
+
+  .offers__pagination-total {
+    font-size: 16px;
+  }
+
+  .offers__pagination {
+    margin-bottom: -20px;
+  }
+
+  .offers__pagination-button {
+    width: 56px;
+    height: 26px;
+  }
+
+  .offers__item-title {
+    font-size: 28px;
+    max-width: 234px;
+    top: 70px;
+    left: 0;
+  }
+
+  .offers__item-icon {
+    position: absolute;
+    bottom: unset;
+    right: unset;
+    left: 260px;
+    top: 85px;
+    width: 43px;
+    height: 43px;
+  }
+
+  .offers__item-image {
+    margin-bottom: 25px;
+  }
+
+  .offers__item-description {
+    font-size: 18px;
+    max-width: 380px;
+  }
+
+  .offers__item-link-anchor {
+    gap: 12px;
+    transition: opacity 0.3s ease;
+  }
+
+  .offers__item-link-anchor:hover {
+    opacity: 0.5;
+  }
+
+  .offers__item-link-text {
+    font-size: 21px;
+  }
+
+  .offers__item-link-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .offers__item-description {
+    max-width: 460px;
   }
 }
