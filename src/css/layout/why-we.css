@@ -1,0 +1,231 @@
+.why-we {
+  position: relative;
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.why-we__container {
+  position: relative;
+}
+
+.why-we__marker {
+  margin-bottom: 20px;
+}
+
+.why-we__title {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 105%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  margin-bottom: 18px;
+}
+
+.why-we__title-part-1 {
+  display: block;
+  margin-left: 50px;
+}
+
+.why-we__title-part-2 {
+  color: var(--primary-color);
+}
+
+.why-we__title-dot {
+  width: 27px;
+  height: 18px;
+}
+
+.why-we__description {
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 20px;
+  max-width: 290px;
+}
+
+.why-we__benefit-1 {
+  position: relative;
+  border: 1px solid #5b6153;
+  border-radius: 17px;
+  width: 188px;
+  height: 125px;
+  box-shadow: 0 0 5px rgba(21, 21, 19, 0.07);
+  background: #fff0ec;
+  padding: 16px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.why-we__benefit-number {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 68px;
+  line-height: 0.7;
+  letter-spacing: -0.03em;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.why-we__benefit-text {
+  font-size: 16px;
+}
+
+.why-we__benefit-1__icon {
+  width: 54px;
+  height: 49px;
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+}
+
+.why-we__benefit__index {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: var(--primary-color);
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.why-we__benefit__index::after {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin-left: 7px;
+}
+
+.why-we__benefit-2 {
+  position: relative;
+  border: 1px solid #5b6153;
+  border-radius: 17px;
+  width: 188px;
+  height: 150px;
+  box-shadow: 0 0 5px rgba(21, 21, 19, 0.07);
+  background: #edfdeb;
+  padding: 30px 16px 16px 16px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.why-we__benefit-title {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 96%;
+  letter-spacing: -0.05em;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.why-we__benefit-subtitle {
+  font-size: 16px;
+  max-width: 85%;
+}
+
+.why-we__benefit-subtitle.why-we__benefit-subtitle--pos {
+  margin-left: auto;
+}
+
+.why-we__benefit-2__icon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 75px;
+  height: 75px;
+}
+
+.why-we__benefit-3 {
+  position: relative;
+  z-index: 2;
+  padding: 36px 16px 16px 16px;
+  /* overflow: hidden; */
+
+  border: 1px solid #5b6153;
+  border-radius: 17px;
+  width: 188px;
+  height: 150px;
+  box-shadow: 0 0 5px rgba(21, 21, 19, 0.07);
+  background: #ffc;
+  text-align: end;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+.why-we__benefit-3__icon {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: 75px;
+  height: 75px;
+}
+
+.why-we__benefit-3__claws {
+  width: 140px;
+  position: absolute;
+  top: -1px;
+  right: 0;
+}
+
+.why-we__benefit__index-left {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: var(--primary-color);
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.why-we__benefit__index-left::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin-right: 7px;
+}
+
+.why-we__benefit-4 {
+  position: relative;
+  border: 1px solid #5b6153;
+  border-radius: 17px;
+  width: 189px;
+  height: 161px;
+  overflow: hidden;
+
+  box-shadow: 0 0 5px rgba(21, 21, 19, 0.07);
+  background: #e5fffd;
+  text-align: end;
+  margin-left: auto;
+  padding: 16px 16px 16px 16px;
+}
+
+.why-we__benefit-4__icon {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: 60px;
+  height: 60px;
+}
+
+.why-we__benefits {
+  position: relative;
+}
+
+.why-we__benefit-image-carrot {
+  width: 280px;
+  position: absolute;
+  right: -112px;
+  top: 130px;
+  z-index: 1;
+}

@@ -95,10 +95,6 @@
   background-color: var(--primary-color);
 }
 
-.offers__item {
-  margin-bottom: 18px;
-}
-
 .offers__item-image__wrapper {
   position: relative;
 }
@@ -163,6 +159,7 @@
 
 .offers__swiper {
   overflow: hidden;
+  margin-bottom: 18px;
 }
 
 .offers__paw-1 {
