@@ -229,3 +229,53 @@
   top: 130px;
   z-index: 1;
 }
+
+.why-we__benefit {
+  position: relative;
+  margin-top: -50px;
+}
+
+.why-we__benefit-image-caracal {
+  width: 290px;
+}
+
+.why-we__benefit-image-note {
+  position: absolute;
+  top: 186px;
+  left: 50px;
+  width: 75px;
+}
+
+.why-we__benefit-caption-caracal {
+  position: absolute;
+  top: 205px;
+  left: 40px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 100%;
+  max-width: 80px;
+}
+
+.why-we__decor-1 {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  width: 39px;
+  transform: rotate(-30deg);
+}
+
+.why-we__decor-2 {
+  position: absolute;
+  top: 300px;
+  right: 30px;
+  width: 39px;
+  transform: rotate(40deg);
+}
+
+.why-we__decor-3 {
+  position: absolute;
+  bottom: 430px;
+  left: 50px;
+  width: 39px;
+  transform: rotate(50deg);
+}
