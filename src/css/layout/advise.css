@@ -170,6 +170,7 @@
   overflow: hidden;
   margin-bottom: 20px;
   padding: 0 15px;
+  z-index: 1;
 }
 
 .advise__swiper .swiper-slide {
@@ -197,7 +198,7 @@
   }
 
   .advise__marker {
-    margin-bottom: -30px;
+    margin-bottom: -40px;
   }
 
   .advise__title {
@@ -219,6 +220,7 @@
   .advise__title-line-4,
   .advise__title-line-5,
   .advise__title-line-6 {
+    display: block;
     margin-left: 157px;
   }
 
@@ -284,5 +286,54 @@
   .advise__swiper {
     margin-bottom: 32px;
     padding: 0 60px;
+  }
+
+  .advise__title {
+    font-size: 64px;
+  }
+
+  .advise__title-line-1 {
+    margin-left: 365px;
+  }
+
+  .advise__title-line-2 {
+    margin-left: 155px;
+  }
+
+  .advise__title-line-1::after {
+    width: 66px;
+    height: 44px;
+  }
+
+  .advise__title-line-4,
+  .advise__title-line-5,
+  .advise__title-line-6 {
+    margin-left: 365px;
+  }
+
+  .category__link-img {
+    width: 130px;
+    top: -70px;
+    left: calc(50% + 100px);
+  }
+
+  .advise__product-price {
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .advise__title-line-1 {
+    margin-left: 430px;
+  }
+
+  .advise__title-line-2 {
+    margin-left: 200px;
+  }
+
+  .advise__title-line-4,
+  .advise__title-line-5,
+  .advise__title-line-6 {
+    margin-left: 430px;
   }
 }
