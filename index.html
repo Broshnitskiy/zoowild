@@ -34,7 +34,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script type="module" crossorigin src="/zoowild/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/zoowild/assets/index-D1g8WUKQ.css">
+    <link rel="stylesheet" crossorigin href="/zoowild/assets/index-fN-vgyiZ.css">
   </head>
   <body>
     <main>
@@ -948,16 +948,17 @@
       Пропозицiями від кормів до іграшок та аксесуарів
     </p>
 
-    <div class="offers__pagination">
-      <p class="offers__pagination__counter">
-        <span class="offers__pagination-text"> 01</span>
-        <span class="offers__pagination-total">/03</span>
+    <div class="pagination">
+      <p class="pagination__counter">
+        <span class="pagination-text" data-offer-current-slide> 01</span>
+        <span class="pagination-total" data-offer-total-slide>/03</span>
       </p>
 
-      <div class="offers__pagination-controls">
+      <div class="pagination-controls">
         <button
           type="button"
-          class="offers__pagination-button offers__pagination-button--left"
+          class="pagination-button pagination-button--left"
+          data-offer-pagination-button-left
           aria-label="Попередня пропозиція"
         >
           <svg
@@ -976,7 +977,8 @@
         </button>
         <button
           type="button"
-          class="offers__pagination-button offers__pagination-button--right"
+          class="pagination-button pagination-button--right"
+          data-offer-pagination-button-right
           aria-label="Наступна пропозиція"
         >
           <svg
@@ -1198,20 +1200,21 @@
       <span class="advise__title-line-6">до водички</span>
     </h2>
 
-    <div class="advise__pagination offers__pagination">
-      <p class="offers__pagination-counter">
-        <span class="offers__pagination-text">01</span>
-        <span class="offers__pagination-total">/03</span>
+    <div class="pagination advise-pagination">
+      <p class="pagination-counter">
+        <span class="pagination-text" data-advise-current-slide>01</span>
+        <span class="pagination-total" data-advise-total-slide>/03</span>
       </p>
 
-      <div class="offers__pagination-controls">
+      <div class="pagination-controls">
         <button
           type="button"
-          class="offers__pagination-button advise__pagination-button--left"
+          class="pagination-button pagination-button--left"
           aria-label="Попередня пропозиція"
+          data-advise-nav-prev-btn
         >
           <svg
-            class="offers__pagination-icon"
+            class="pagination-icon"
             width="25"
             height="10"
             viewBox="0 0 25 10"
@@ -1227,11 +1230,12 @@
         </button>
         <button
           type="button"
-          class="offers__pagination-button advise__pagination-button--right"
+          class="pagination-button pagination-button--right"
           aria-label="Наступна пропозиція"
+          data-advise-nav-next-btn
         >
           <svg
-            class="offers__pagination-icon"
+            class="pagination-icon"
             width="25"
             height="10"
             viewBox="0 0 25 10"
@@ -1265,70 +1269,79 @@
   </div>
 
   <div class="advise__products">
-    <div class="advise__product-first">
-      <div class="advise__product-image">
-        <img loading="lazy" src="/zoowild/assets/feed-DE4Zcxe7.webp" alt="Корм" />
-      </div>
-      <div class="advise__product__content">
-        <h3 class="advise__product-title">Сухий корм</h3>
-        <p class="advise__product-description">
-          PRO PLAN®. Сухий повнораціонний корм для дорослих котів з чутливим
-          травленням чи вибагливих до їжі, з індичкою
-        </p>
-      </div>
-    </div>
-
-    <div class="advise__product-middle">
-      <div class="advise__product-image">
-        <img loading="lazy" src="/zoowild/assets/water-CBlc4euj.webp" alt="Вода" />
-      </div>
-      <div class="advise__product__content">
-        <h3 class="advise__product-title">Optimum aqua з щілочю</h3>
-        <p class="advise__product-description">
-          Найкраща водичка з щiлочю для будь-яких тварин. Природньо-лiкувальна з
-          додаванням бiодобавок
-        </p>
-        <div class="advise__product-price">
-          <p class="advise__product-price-current">96<span>₴</span></p>
-          <p class="advise__product-price-discount">-35%</p>
-
-          <button
-            type="button"
-            class="advise__product-button advise__product-button--favourite"
-            aria-label="Додати до улюблених"
-          >
-            <img
-              loading="lazy"
-              class="advise__product-icon-favourite"
-              src="data:image/svg+xml,%3csvg%20width='8'%20height='7'%20viewBox='0%200%208%207'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M5.6045%200.368164C4.91313%200.368164%204.31197%200.662807%203.95838%201.15657C3.60479%200.662807%203.00363%200.368164%202.31226%200.368164C1.78855%200.36874%201.28647%200.565605%200.916153%200.915572C0.545836%201.26554%200.337524%201.74003%200.336914%202.23496C0.336914%203.14347%200.936102%204.089%202.11802%205.0448C2.65961%205.48093%203.24463%205.86646%203.86488%206.19599C3.89363%206.21059%203.92575%206.21823%203.95838%206.21823C3.99101%206.21823%204.02314%206.21059%204.05188%206.19599C4.67213%205.86646%205.25715%205.48093%205.79874%205.0448C6.98066%204.089%207.57985%203.14347%207.57985%202.23496C7.57924%201.74003%207.37093%201.26554%207.00061%200.915572C6.63029%200.565605%206.12821%200.36874%205.6045%200.368164ZM3.95838%205.81641C3.41812%205.52176%200.731983%203.96859%200.731983%202.23496C0.732419%201.839%200.899052%201.45938%201.19532%201.1794C1.49158%200.899411%201.89328%200.741935%202.31226%200.741523C2.97993%200.741523%203.5406%201.07848%203.77566%201.62109C3.79054%201.65533%203.81586%201.68462%203.8484%201.70523C3.88093%201.72584%203.91921%201.73684%203.95838%201.73684C3.99755%201.73684%204.03583%201.72584%204.06837%201.70523C4.1009%201.68462%204.12622%201.65533%204.1411%201.62109C4.37617%201.07848%204.93684%200.741523%205.6045%200.741523C6.02348%200.741935%206.42518%200.899411%206.72145%201.1794C7.01771%201.45938%207.18434%201.839%207.18478%202.23496C7.18478%203.96859%204.49864%205.52176%203.95838%205.81641Z'%20fill='%23A5BB7D'%20stroke='%23A5BB7D'%20stroke-width='0.170588'/%3e%3c/svg%3e"
-              alt="Іконка серця"
-            />
-          </button>
-          <button
-            type="button"
-            class="advise__product-button advise__product-button--cart"
-            aria-label="Додати до кошика"
-          >
-            <img
-              loading="lazy"
-              class="advise__product-icon-cart"
-              src="data:image/svg+xml,%3csvg%20width='18'%20height='17'%20viewBox='0%200%2018%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_b_1_8351)'%3e%3crect%20x='1.11135'%20y='0.530541'%20width='15.6941'%20height='15.6941'%20rx='7.84706'%20stroke='%23A5BB7D'%20stroke-width='0.511765'/%3e%3cpath%20d='M10.2956%207.84278V6.23837C10.2956%205.88378%2010.1548%205.5437%209.90403%205.29297C9.65329%205.04223%209.31322%204.90137%208.95862%204.90137C8.60403%204.90137%208.26395%205.04223%208.01322%205.29297C7.76248%205.5437%207.62162%205.88378%207.62162%206.23837V7.84278M11.6704%207.13221L12.1207%2011.4106C12.1457%2011.6477%2011.9603%2011.8538%2011.7218%2011.8538H6.19548C6.13922%2011.8539%206.08358%2011.8421%206.03217%2011.8192C5.98075%2011.7964%205.93472%2011.763%205.89707%2011.7212C5.85941%2011.6794%205.83096%2011.6301%205.81358%2011.5766C5.79619%2011.5231%205.79026%2011.4666%205.79616%2011.4106L6.24682%207.13221C6.25721%207.03365%206.30373%206.94242%206.3774%206.87613C6.45107%206.80983%206.54667%206.77316%206.64578%206.77318H11.2715C11.4768%206.77318%2011.649%206.92827%2011.6704%207.13221ZM7.75532%207.84278C7.75532%207.87824%207.74123%207.91225%207.71616%207.93732C7.69108%207.9624%207.65708%207.97648%207.62162%207.97648C7.58616%207.97648%207.55215%207.9624%207.52708%207.93732C7.502%207.91225%207.48792%207.87824%207.48792%207.84278C7.48792%207.80732%207.502%207.77331%207.52708%207.74824C7.55215%207.72317%207.58616%207.70908%207.62162%207.70908C7.65708%207.70908%207.69108%207.72317%207.71616%207.74824C7.74123%207.77331%207.75532%207.80732%207.75532%207.84278ZM10.4293%207.84278C10.4293%207.87824%2010.4152%207.91225%2010.3902%207.93732C10.3651%207.9624%2010.3311%207.97648%2010.2956%207.97648C10.2602%207.97648%2010.2262%207.9624%2010.2011%207.93732C10.176%207.91225%2010.1619%207.87824%2010.1619%207.84278C10.1619%207.80732%2010.176%207.77331%2010.2011%207.74824C10.2262%207.72317%2010.2602%207.70908%2010.2956%207.70908C10.3311%207.70908%2010.3651%207.72317%2010.3902%207.74824C10.4152%207.77331%2010.4293%207.80732%2010.4293%207.84278Z'%20stroke='%23A5BB7D'%20stroke-width='0.554412'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_b_1_8351'%20x='-0.149183'%20y='-0.729994'%20width='18.2154'%20height='18.2151'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeGaussianBlur%20in='BackgroundImageFix'%20stdDeviation='0.502326'/%3e%3cfeComposite%20in2='SourceAlpha'%20operator='in'%20result='effect1_backgroundBlur_1_8351'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_backgroundBlur_1_8351'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e"
-              alt="Іконка кошика"
-            />
-          </button>
+    <div class="advise__swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="advise__product-first">
+            <div class="advise__product-image">
+              <img loading="lazy" src="/zoowild/assets/feed-DE4Zcxe7.webp" alt="Корм" />
+            </div>
+            <div class="advise__product__content">
+              <h3 class="advise__product-title">Сухий корм</h3>
+              <p class="advise__product-description">
+                PRO PLAN®. Сухий повнораціонний корм для дорослих котів з
+                чутливим травленням чи вибагливих до їжі, з індичкою
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+        <div class="swiper-slide">
+          <div class="advise__product-middle">
+            <div class="advise__product-image">
+              <img loading="lazy" src="/zoowild/assets/water-CBlc4euj.webp" alt="Вода" />
+            </div>
+            <div class="advise__product__content">
+              <h3 class="advise__product-title">Optimum aqua з щілочю</h3>
+              <p class="advise__product-description">
+                Найкраща водичка з щiлочю для будь-яких тварин.
+                Природньо-лiкувальна з додаванням бiодобавок
+              </p>
+              <div class="advise__product-price">
+                <p class="advise__product-price-current">96<span>₴</span></p>
+                <p class="advise__product-price-discount">-35%</p>
 
-    <div class="advise__product-last">
-      <div class="advise__product-image">
-        <img loading="lazy" src="/zoowild/assets/bottle-B41FLoH1.webp" alt="Пляшка" />
-      </div>
-      <div class="advise__product__content">
-        <h3 class="advise__product-title">Портативна пляшка поїлка</h3>
-        <p class="advise__product-description">
-          Дорожня миска для води та корму з контейнером, як усiх домашнiх тварин
-        </p>
+                <button
+                  type="button"
+                  class="advise__product-button advise__product-button--favourite"
+                  aria-label="Додати до улюблених"
+                >
+                  <img
+                    loading="lazy"
+                    class="advise__product-icon-favourite"
+                    src="data:image/svg+xml,%3csvg%20width='8'%20height='7'%20viewBox='0%200%208%207'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M5.6045%200.368164C4.91313%200.368164%204.31197%200.662807%203.95838%201.15657C3.60479%200.662807%203.00363%200.368164%202.31226%200.368164C1.78855%200.36874%201.28647%200.565605%200.916153%200.915572C0.545836%201.26554%200.337524%201.74003%200.336914%202.23496C0.336914%203.14347%200.936102%204.089%202.11802%205.0448C2.65961%205.48093%203.24463%205.86646%203.86488%206.19599C3.89363%206.21059%203.92575%206.21823%203.95838%206.21823C3.99101%206.21823%204.02314%206.21059%204.05188%206.19599C4.67213%205.86646%205.25715%205.48093%205.79874%205.0448C6.98066%204.089%207.57985%203.14347%207.57985%202.23496C7.57924%201.74003%207.37093%201.26554%207.00061%200.915572C6.63029%200.565605%206.12821%200.36874%205.6045%200.368164ZM3.95838%205.81641C3.41812%205.52176%200.731983%203.96859%200.731983%202.23496C0.732419%201.839%200.899052%201.45938%201.19532%201.1794C1.49158%200.899411%201.89328%200.741935%202.31226%200.741523C2.97993%200.741523%203.5406%201.07848%203.77566%201.62109C3.79054%201.65533%203.81586%201.68462%203.8484%201.70523C3.88093%201.72584%203.91921%201.73684%203.95838%201.73684C3.99755%201.73684%204.03583%201.72584%204.06837%201.70523C4.1009%201.68462%204.12622%201.65533%204.1411%201.62109C4.37617%201.07848%204.93684%200.741523%205.6045%200.741523C6.02348%200.741935%206.42518%200.899411%206.72145%201.1794C7.01771%201.45938%207.18434%201.839%207.18478%202.23496C7.18478%203.96859%204.49864%205.52176%203.95838%205.81641Z'%20fill='%23A5BB7D'%20stroke='%23A5BB7D'%20stroke-width='0.170588'/%3e%3c/svg%3e"
+                    alt="Іконка серця"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="advise__product-button advise__product-button--cart"
+                  aria-label="Додати до кошика"
+                >
+                  <img
+                    loading="lazy"
+                    class="advise__product-icon-cart"
+                    src="data:image/svg+xml,%3csvg%20width='18'%20height='17'%20viewBox='0%200%2018%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_b_1_8351)'%3e%3crect%20x='1.11135'%20y='0.530541'%20width='15.6941'%20height='15.6941'%20rx='7.84706'%20stroke='%23A5BB7D'%20stroke-width='0.511765'/%3e%3cpath%20d='M10.2956%207.84278V6.23837C10.2956%205.88378%2010.1548%205.5437%209.90403%205.29297C9.65329%205.04223%209.31322%204.90137%208.95862%204.90137C8.60403%204.90137%208.26395%205.04223%208.01322%205.29297C7.76248%205.5437%207.62162%205.88378%207.62162%206.23837V7.84278M11.6704%207.13221L12.1207%2011.4106C12.1457%2011.6477%2011.9603%2011.8538%2011.7218%2011.8538H6.19548C6.13922%2011.8539%206.08358%2011.8421%206.03217%2011.8192C5.98075%2011.7964%205.93472%2011.763%205.89707%2011.7212C5.85941%2011.6794%205.83096%2011.6301%205.81358%2011.5766C5.79619%2011.5231%205.79026%2011.4666%205.79616%2011.4106L6.24682%207.13221C6.25721%207.03365%206.30373%206.94242%206.3774%206.87613C6.45107%206.80983%206.54667%206.77316%206.64578%206.77318H11.2715C11.4768%206.77318%2011.649%206.92827%2011.6704%207.13221ZM7.75532%207.84278C7.75532%207.87824%207.74123%207.91225%207.71616%207.93732C7.69108%207.9624%207.65708%207.97648%207.62162%207.97648C7.58616%207.97648%207.55215%207.9624%207.52708%207.93732C7.502%207.91225%207.48792%207.87824%207.48792%207.84278C7.48792%207.80732%207.502%207.77331%207.52708%207.74824C7.55215%207.72317%207.58616%207.70908%207.62162%207.70908C7.65708%207.70908%207.69108%207.72317%207.71616%207.74824C7.74123%207.77331%207.75532%207.80732%207.75532%207.84278ZM10.4293%207.84278C10.4293%207.87824%2010.4152%207.91225%2010.3902%207.93732C10.3651%207.9624%2010.3311%207.97648%2010.2956%207.97648C10.2602%207.97648%2010.2262%207.9624%2010.2011%207.93732C10.176%207.91225%2010.1619%207.87824%2010.1619%207.84278C10.1619%207.80732%2010.176%207.77331%2010.2011%207.74824C10.2262%207.72317%2010.2602%207.70908%2010.2956%207.70908C10.3311%207.70908%2010.3651%207.72317%2010.3902%207.74824C10.4152%207.77331%2010.4293%207.80732%2010.4293%207.84278Z'%20stroke='%23A5BB7D'%20stroke-width='0.554412'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_b_1_8351'%20x='-0.149183'%20y='-0.729994'%20width='18.2154'%20height='18.2151'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeGaussianBlur%20in='BackgroundImageFix'%20stdDeviation='0.502326'/%3e%3cfeComposite%20in2='SourceAlpha'%20operator='in'%20result='effect1_backgroundBlur_1_8351'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_backgroundBlur_1_8351'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e"
+                    alt="Іконка кошика"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="advise__product-last">
+            <div class="advise__product-image">
+              <img loading="lazy" src="/zoowild/assets/bottle-B41FLoH1.webp" alt="Пляшка" />
+            </div>
+            <div class="advise__product__content">
+              <h3 class="advise__product-title">Портативна пляшка поїлка</h3>
+              <p class="advise__product-description">
+                Дорожня миска для води та корму з контейнером, як усiх домашнiх
+                тварин
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
