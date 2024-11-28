@@ -25,3 +25,4 @@
 /* components style */
 @import url('./components/marker.css');
 @import url('./components/button.css');
+@import url('./components/pagination-counter.css');

@@ -16,16 +16,17 @@
       Пропозицiями від кормів до іграшок та аксесуарів
     </p>
 
-    <div class="offers__pagination">
-      <p class="offers__pagination__counter">
-        <span class="offers__pagination-text"> 01</span>
-        <span class="offers__pagination-total">/03</span>
+    <div class="pagination">
+      <p class="pagination__counter">
+        <span class="pagination-text" data-offer-current-slide> 01</span>
+        <span class="pagination-total" data-offer-total-slide>/03</span>
       </p>
 
-      <div class="offers__pagination-controls">
+      <div class="pagination-controls">
         <button
           type="button"
-          class="offers__pagination-button offers__pagination-button--left"
+          class="pagination-button pagination-button--left"
+          data-offer-pagination-button-left
           aria-label="Попередня пропозиція"
         >
           <svg
@@ -44,7 +45,8 @@
         </button>
         <button
           type="button"
-          class="offers__pagination-button offers__pagination-button--right"
+          class="pagination-button pagination-button--right"
+          data-offer-pagination-button-right
           aria-label="Наступна пропозиція"
         >
           <svg

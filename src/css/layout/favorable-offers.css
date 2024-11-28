@@ -41,60 +41,6 @@
   max-width: 218px;
 }
 
-.offers__pagination-text {
-  font-size: 15px;
-  color: var(--primary-color);
-}
-
-.offers__pagination-total {
-  font-size: 13px;
-  color: var(--primary-color);
-}
-
-.offers__pagination-controls {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.offers__pagination {
-  display: block;
-  text-align: end;
-  margin-left: auto;
-  margin-bottom: -10px;
-  position: relative;
-  z-index: 100;
-}
-
-.offers__pagination-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 15px;
-  border-radius: 40px;
-  border: 1px solid #a5bb7d;
-  backdrop-filter: blur(4.022650718688965px);
-  transition: opacity 0.3s ease;
-}
-
-.offers__pagination-button:hover {
-  opacity: 0.7;
-}
-
-.offers__pagination-button > svg {
-  width: 16px;
-  height: 7px;
-}
-
-.offers__pagination-button--left {
-  background-color: transparent;
-}
-
-.offers__pagination-button--right {
-  background-color: var(--primary-color);
-}
-
 .offers__item-image__wrapper {
   position: relative;
 }
@@ -215,37 +161,6 @@
     max-width: 250px;
   }
 
-  .offers__pagination__counter {
-    margin-bottom: 6px;
-  }
-
-  .offers__pagination-text {
-    font-size: 20px;
-  }
-
-  .offers__pagination-total {
-    font-size: 14px;
-  }
-
-  .offers__pagination-controls {
-    gap: 10px;
-  }
-
-  .offers__pagination {
-    margin-bottom: -20px;
-  }
-
-  .offers__pagination-button {
-    width: 46px;
-    height: 26px;
-    border-radius: 63px;
-  }
-
-  .offers__pagination-button > svg {
-    width: 25px;
-    height: 10px;
-  }
-
   .offers__item-title {
     font-size: 20px;
     max-width: 150px;
@@ -308,27 +223,6 @@
     margin-left: 368px;
     margin-bottom: 0;
     max-width: 338px;
-  }
-
-  .offers__pagination__counter {
-    margin-bottom: 6px;
-  }
-
-  .offers__pagination-text {
-    font-size: 24px;
-  }
-
-  .offers__pagination-total {
-    font-size: 16px;
-  }
-
-  .offers__pagination {
-    margin-bottom: -20px;
-  }
-
-  .offers__pagination-button {
-    width: 56px;
-    height: 26px;
   }
 
   .offers__item-title {

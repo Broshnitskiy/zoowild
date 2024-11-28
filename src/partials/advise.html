@@ -14,20 +14,21 @@
       <span class="advise__title-line-6">до водички</span>
     </h2>
 
-    <div class="advise__pagination offers__pagination">
-      <p class="offers__pagination-counter">
-        <span class="offers__pagination-text">01</span>
-        <span class="offers__pagination-total">/03</span>
+    <div class="pagination advise-pagination">
+      <p class="pagination-counter">
+        <span class="pagination-text" data-advise-current-slide>01</span>
+        <span class="pagination-total" data-advise-total-slide>/03</span>
       </p>
 
-      <div class="offers__pagination-controls">
+      <div class="pagination-controls">
         <button
           type="button"
-          class="offers__pagination-button advise__pagination-button--left"
+          class="pagination-button pagination-button--left"
           aria-label="Попередня пропозиція"
+          data-advise-nav-prev-btn
         >
           <svg
-            class="offers__pagination-icon"
+            class="pagination-icon"
             width="25"
             height="10"
             viewBox="0 0 25 10"
@@ -43,11 +44,12 @@
         </button>
         <button
           type="button"
-          class="offers__pagination-button advise__pagination-button--right"
+          class="pagination-button pagination-button--right"
           aria-label="Наступна пропозиція"
+          data-advise-nav-next-btn
         >
           <svg
-            class="offers__pagination-icon"
+            class="pagination-icon"
             width="25"
             height="10"
             viewBox="0 0 25 10"
@@ -81,70 +83,79 @@
   </div>
 
   <div class="advise__products">
-    <div class="advise__product-first">
-      <div class="advise__product-image">
-        <img loading="lazy" src="img/advise/feed.webp" alt="Корм" />
-      </div>
-      <div class="advise__product__content">
-        <h3 class="advise__product-title">Сухий корм</h3>
-        <p class="advise__product-description">
-          PRO PLAN®. Сухий повнораціонний корм для дорослих котів з чутливим
-          травленням чи вибагливих до їжі, з індичкою
-        </p>
-      </div>
-    </div>
-
-    <div class="advise__product-middle">
-      <div class="advise__product-image">
-        <img loading="lazy" src="img/advise/water.webp" alt="Вода" />
-      </div>
-      <div class="advise__product__content">
-        <h3 class="advise__product-title">Optimum aqua з щілочю</h3>
-        <p class="advise__product-description">
-          Найкраща водичка з щiлочю для будь-яких тварин. Природньо-лiкувальна з
-          додаванням бiодобавок
-        </p>
-        <div class="advise__product-price">
-          <p class="advise__product-price-current">96<span>₴</span></p>
-          <p class="advise__product-price-discount">-35%</p>
-
-          <button
-            type="button"
-            class="advise__product-button advise__product-button--favourite"
-            aria-label="Додати до улюблених"
-          >
-            <img
-              loading="lazy"
-              class="advise__product-icon-favourite"
-              src="img/svg/favourite.svg"
-              alt="Іконка серця"
-            />
-          </button>
-          <button
-            type="button"
-            class="advise__product-button advise__product-button--cart"
-            aria-label="Додати до кошика"
-          >
-            <img
-              loading="lazy"
-              class="advise__product-icon-cart"
-              src="img/svg/card.svg"
-              alt="Іконка кошика"
-            />
-          </button>
+    <div class="advise__swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="advise__product-first">
+            <div class="advise__product-image">
+              <img loading="lazy" src="img/advise/feed.webp" alt="Корм" />
+            </div>
+            <div class="advise__product__content">
+              <h3 class="advise__product-title">Сухий корм</h3>
+              <p class="advise__product-description">
+                PRO PLAN®. Сухий повнораціонний корм для дорослих котів з
+                чутливим травленням чи вибагливих до їжі, з індичкою
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+        <div class="swiper-slide">
+          <div class="advise__product-middle">
+            <div class="advise__product-image">
+              <img loading="lazy" src="img/advise/water.webp" alt="Вода" />
+            </div>
+            <div class="advise__product__content">
+              <h3 class="advise__product-title">Optimum aqua з щілочю</h3>
+              <p class="advise__product-description">
+                Найкраща водичка з щiлочю для будь-яких тварин.
+                Природньо-лiкувальна з додаванням бiодобавок
+              </p>
+              <div class="advise__product-price">
+                <p class="advise__product-price-current">96<span>₴</span></p>
+                <p class="advise__product-price-discount">-35%</p>
 
-    <div class="advise__product-last">
-      <div class="advise__product-image">
-        <img loading="lazy" src="img/advise/bottle.webp" alt="Пляшка" />
-      </div>
-      <div class="advise__product__content">
-        <h3 class="advise__product-title">Портативна пляшка поїлка</h3>
-        <p class="advise__product-description">
-          Дорожня миска для води та корму з контейнером, як усiх домашнiх тварин
-        </p>
+                <button
+                  type="button"
+                  class="advise__product-button advise__product-button--favourite"
+                  aria-label="Додати до улюблених"
+                >
+                  <img
+                    loading="lazy"
+                    class="advise__product-icon-favourite"
+                    src="img/svg/favourite.svg"
+                    alt="Іконка серця"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="advise__product-button advise__product-button--cart"
+                  aria-label="Додати до кошика"
+                >
+                  <img
+                    loading="lazy"
+                    class="advise__product-icon-cart"
+                    src="img/svg/card.svg"
+                    alt="Іконка кошика"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="advise__product-last">
+            <div class="advise__product-image">
+              <img loading="lazy" src="img/advise/bottle.webp" alt="Пляшка" />
+            </div>
+            <div class="advise__product__content">
+              <h3 class="advise__product-title">Портативна пляшка поїлка</h3>
+              <p class="advise__product-description">
+                Дорожня миска для води та корму з контейнером, як усiх домашнiх
+                тварин
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

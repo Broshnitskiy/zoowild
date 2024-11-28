@@ -1,16 +1,14 @@
 const currentSlideNumberRef = document.querySelector(
-  '.offers__pagination-text'
+  '[data-offer-current-slide]'
 );
-const totaltSlideNumberRef = document.querySelector(
-  '.offers__pagination-total'
-);
+const totaltSlideNumberRef = document.querySelector('[data-offer-total-slide]');
 
 const swiper = new Swiper('.offers__swiper', {
   slidesPerView: 1,
   spaceBetween: 10,
   navigation: {
-    nextEl: '.offers__pagination-button--right',
-    prevEl: '.offers__pagination-button--left',
+    nextEl: '[data-offer-pagination-button-right]',
+    prevEl: '[data-offer-pagination-button-left]',
   },
   loop: false,
   on: {
