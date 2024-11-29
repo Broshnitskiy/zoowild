@@ -53,12 +53,14 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  opacity: 0;
 
   text-shadow: 0 9px 20px rgba(0, 0, 0, 0.2), 0 37px 37px rgba(0, 0, 0, 0.15),
     0 82px 49px rgba(0, 0, 0, 0.12), 0 146px 59px rgba(0, 0, 0, 0.01),
     0 228px 64px rgba(0, 0, 0, 0), 1px 1px 0 #120e01;
-  mix-blend-mode: overlay;
+  mix-blend-mode: normal;
+
+  opacity: 0;
+  will-change: transform, opacity;
 }
 
 .hero__description {
@@ -71,6 +73,7 @@
   margin: 0 auto 25px auto;
   max-width: 216px;
   padding-left: 14px;
+  opacity: 0;
 }
 
 .hero__button {
@@ -84,6 +87,7 @@
   box-shadow: 0 6px 14px rgba(3, 30, 9, 0.3);
   background: var(--primary-color);
   margin: 0 auto;
+  opacity: 0;
 }
 
 .hero__button__icon--catalog {

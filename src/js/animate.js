@@ -10,30 +10,18 @@ const timeline = anime.timeline({
 });
 
 timeline
-  .add(
-    {
-      targets: '.hero__image-caracal',
-      translateX: ['-100%', '0%'],
-      opacity: [0, 1],
-      duration: 2500,
-    },
-    400
-  )
-  .add(
-    {
-      targets: '.hero__image-snake',
-      translateX: ['100%', '0%'],
-      opacity: [0, 1],
-      duration: 2000,
-    },
-    '-=2000'
-  )
   .add({
     targets: '.hero__title',
-    scale: [0.9, 1],
+    scale: [0.5, 1],
     opacity: [0, 1],
-    duration: 1500,
+    duration: 2000,
     easing: 'easeOutBack',
+    begin: () => {
+      document.querySelector('.hero__title').style.mixBlendMode = 'normal';
+    },
+    complete: () => {
+      document.querySelector('.hero__title').style.mixBlendMode = 'overlay';
+    },
   })
   .add({
     targets: '.hero__description',
@@ -51,6 +39,21 @@ timeline
       easing: 'easeOutQuad',
     },
     '-=1000'
+  )
+  .add({
+    targets: '.hero__image-caracal',
+    translateX: ['-100%', '0%'],
+    opacity: [1, 1],
+    duration: 2500,
+  })
+  .add(
+    {
+      targets: '.hero__image-snake',
+      translateX: ['100%', '0%'],
+      opacity: [1, 1],
+      duration: 2500,
+    },
+    '-=2500'
   );
 
 /**
