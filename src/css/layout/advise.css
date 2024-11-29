@@ -186,6 +186,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .advise {
+    padding-top: 0;
+  }
+
   .advise__swiper {
     margin-bottom: 25px;
     padding: 0 34px;
