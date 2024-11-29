@@ -40,12 +40,15 @@ timeline
     },
     '-=1000'
   )
-  .add({
-    targets: '.hero__image-caracal',
-    translateX: ['-100%', '0%'],
-    opacity: [0, 1],
-    duration: 2500,
-  })
+  .add(
+    {
+      targets: '.hero__image-caracal',
+      translateX: ['-100%', '0%'],
+      opacity: [0, 1],
+      duration: 2500,
+    },
+    '-=1500'
+  )
   .add(
     {
       targets: '.hero__image-snake',
