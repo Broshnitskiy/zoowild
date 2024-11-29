@@ -9,38 +9,49 @@ const timeline = anime.timeline({
   duration: 2000,
 });
 
-// Step 1: Animate caracal and snake images
-timeline.add({
-  targets: ['.hero__image-caracal', '.hero__image-snake'],
-  translateX: (el, i) => (i === 0 ? ['-100%', '0%'] : ['100%', '0%']),
-  opacity: [0, 1],
-  duration: 2500,
-});
-
-// Step 2: Animate the h1 text (hero__title)
-timeline.add({
-  targets: '.hero__title',
-  scale: [0.9, 1],
-  opacity: [0, 1],
-  duration: 1000,
-  easing: 'easeOutBack',
-});
-
-// Step 3: Animate the description (hero__description)
-timeline.add({
-  targets: '.hero__description',
-  translateY: ['50px', '0px'],
-  opacity: [0, 1],
-  duration: 1500,
-});
-
-// Step 4: Animate the button (hero__button)
-timeline.add({
-  targets: '.hero__button',
-  translateY: ['50px', '0px'],
-  opacity: [0, 1],
-  duration: 1000,
-});
+timeline
+  .add(
+    {
+      targets: '.hero__image-caracal',
+      translateX: ['-100%', '0%'],
+      opacity: [0, 1],
+      duration: 2500,
+    },
+    400
+  )
+  .add(
+    {
+      targets: '.hero__image-snake',
+      translateX: ['100%', '0%'],
+      opacity: [0, 1],
+      duration: 2000,
+    },
+    '-=2000'
+  )
+  .add({
+    targets: '.hero__title',
+    scale: [0.9, 1],
+    opacity: [0, 1],
+    duration: 1500,
+    easing: 'easeOutBack',
+  })
+  .add({
+    targets: '.hero__description',
+    translateY: ['50px', '0px'],
+    opacity: [0, 1],
+    duration: 1500,
+    easing: 'easeOutQuad',
+  })
+  .add(
+    {
+      targets: '.hero__button',
+      translateY: ['50px', '0px'],
+      opacity: [0, 1],
+      duration: 1000,
+      easing: 'easeOutQuad',
+    },
+    '-=1000'
+  );
 
 /**
   |============================
