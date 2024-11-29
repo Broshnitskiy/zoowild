@@ -9,6 +9,7 @@
 @import url('./common/base.css');
 @import url('./common/container.css');
 @import url('./common/visually-hidden.css');
+@import url('./common/animated-classes.css');
 
 /* Layout styles */
 @import url('./layout/hero.css');

@@ -1,0 +1,10 @@
+.animate-up {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.zoom-up,
+.animate-left,
+.animate-right {
+  opacity: 0;
+}

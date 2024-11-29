@@ -43,14 +43,14 @@ timeline
   .add({
     targets: '.hero__image-caracal',
     translateX: ['-100%', '0%'],
-    opacity: [1, 1],
+    opacity: [0, 1],
     duration: 2500,
   })
   .add(
     {
       targets: '.hero__image-snake',
       translateX: ['100%', '0%'],
-      opacity: [1, 1],
+      opacity: [0, 1],
       duration: 2500,
     },
     '-=2500'
