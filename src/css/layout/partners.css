@@ -127,6 +127,15 @@
     font-size: 28px;
     max-width: 435px;
   }
+
+  .partners__paw-1,
+  .partners__paw-2,
+  .partners__paw-3,
+  .partners__paw-4,
+  .partners__paw-5 {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

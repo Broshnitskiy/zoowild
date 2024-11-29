@@ -324,6 +324,12 @@
   .advise__product-price {
     margin-top: 12px;
   }
+
+  .advise__paw-1,
+  .advise__paw-2 {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

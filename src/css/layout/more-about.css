@@ -658,6 +658,16 @@
     bottom: -145px;
     left: calc(50% - 600px);
   }
+
+  .more-about__paw-1,
+  .more-about__paw-2,
+  .more-about__paw-3,
+  .more-about__paw-4,
+  .more-about__paw-5,
+  .more-about__paw-6 {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

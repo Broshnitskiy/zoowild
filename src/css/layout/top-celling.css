@@ -262,6 +262,15 @@
     right: unset;
     transform: rotate(0);
   }
+
+  .top-selling__paw-1,
+  .top-selling__paw-2,
+  .top-selling__paw-3,
+  .top-selling__paw-4,
+  .top-selling__paw-5 {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

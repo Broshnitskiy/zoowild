@@ -482,6 +482,13 @@
     right: 0;
     width: 235px;
   }
+
+  .category__decoration-1,
+  .category__decoration-2,
+  .category__decoration-3 {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

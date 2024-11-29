@@ -528,6 +528,13 @@
     width: 32px;
     height: 32px;
   }
+
+  .product-line__paw-1,
+  .product-line__paw-2,
+  .product-line__paw-3 {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

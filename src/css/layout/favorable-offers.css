@@ -268,6 +268,12 @@
     width: 20px;
     height: 20px;
   }
+
+  .offers__paw-1,
+  .offers__paw-2 {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

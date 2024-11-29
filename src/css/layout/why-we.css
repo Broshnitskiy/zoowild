@@ -589,6 +589,13 @@
   .category__link-text.why-we__category__link-text {
     margin-left: 20px;
   }
+
+  .why-we__decor-1,
+  .why-we__decor-2,
+  .why-we__decor-3 {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
