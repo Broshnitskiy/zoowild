@@ -1,0 +1,139 @@
+.whats-new {
+  padding-top: 60px;
+  background-image: url(../../img/whats-new/bg-water-mob.png);
+  background-repeat: no-repeat;
+  background-size: 480px;
+  background-position: bottom -50px center;
+  overflow: hidden;
+}
+
+.whats-new__container {
+  position: relative;
+}
+
+.whats-new__marker {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+.whats-new__title {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 105%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.whats-new__title-line-1,
+.whats-new__title-line-2,
+.whats-new__title-line-3,
+.whats-new__title-line-4 {
+  display: block;
+}
+
+.whats-new__title-line-1 {
+  margin-left: 48px;
+}
+
+.whats-new__title-line-2 {
+  color: var(--primary-color);
+}
+
+.whats-new__description {
+  font-size: 18px;
+  line-height: 120%;
+  max-width: 290px;
+}
+
+.whats-new__product-info {
+  padding-bottom: 50px;
+}
+
+.whats-new__product-title {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 105%;
+  letter-spacing: -0.02em;
+  color: var(--primary-color);
+  max-width: 100px;
+  margin-bottom: 15px;
+}
+
+.whats-new__product {
+  position: relative;
+  padding-top: 428px;
+  padding-bottom: 20px;
+}
+
+.whats-new__product-text {
+  font-size: 15px;
+  line-height: 115%;
+  letter-spacing: -0.02em;
+  color: var(--grand-color);
+  margin-bottom: 12px;
+  max-width: 290px;
+}
+
+.whats-new__product-button {
+  background-color: transparent;
+  border: none;
+}
+
+.whats-new__product-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.whats-new__image--bottle {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 120px);
+  width: 240px;
+  z-index: 2;
+}
+
+.whats-new__image--emblems {
+  position: absolute;
+  top: 220px;
+  left: 5px;
+  width: 120px;
+  z-index: 2;
+}
+
+.whats-new__image--decor {
+  position: absolute;
+  top: 260px;
+  left: calc(50% - 145px);
+  width: 290px;
+  z-index: 1;
+}
+
+.whats-new__additional {
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 5px);
+  z-index: 3;
+  transform: rotate(20deg);
+}
+
+.whats-new__paw-1 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.whats-new__paw-2 {
+  position: absolute;
+  top: 15px;
+  right: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
