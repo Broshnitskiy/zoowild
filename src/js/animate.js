@@ -4,27 +4,63 @@
   |============================
 */
 
-// window.onload = () => {
-const props = {
-  opacity: [1, 1],
-  duration: 3000,
-  easing: 'easeOutQuad',
-};
-// animation for .hero__image-caracal
-anime({
-  targets: '.hero__image-caracal',
-  translateX: ['-100%', '0'],
-  ...props,
+// const props = {
+//   opacity: [1, 1],
+//   duration: 3000,
+//   easing: 'easeOutQuad',
+// };
+// // animation for .hero__image-caracal
+// anime({
+//   targets: '.hero__image-caracal',
+//   translateX: ['-100%', '0'],
+//   ...props,
+// });
+
+// // animation for .hero__image-snake
+// anime({
+//   targets: '.hero__image-snake',
+//   translateX: ['100%', '0%'],
+//   delay: 1000,
+//   ...props,
+// });
+
+const timeline = anime.timeline({
+  easing: 'cubicBezier(.5, .05, .1, .3)',
+  duration: 2000,
 });
 
-// animation for .hero__image-snake
-anime({
-  targets: '.hero__image-snake',
-  translateX: ['100%', '0%'],
-  delay: 1000,
-  ...props,
+// Step 1: Animate caracal and snake images
+timeline.add({
+  targets: ['.hero__image-caracal', '.hero__image-snake'],
+  translateX: (el, i) => (i === 0 ? ['-100%', '0%'] : ['100%', '0%']),
+  opacity: [0, 1],
+  duration: 2500,
 });
-// };
+
+// Step 2: Animate the h1 text (hero__title)
+timeline.add({
+  targets: '.hero__title',
+  scale: [0.9, 1],
+  opacity: [0, 1],
+  duration: 1000,
+  easing: 'easeOutBack',
+});
+
+// Step 3: Animate the description (hero__description)
+timeline.add({
+  targets: '.hero__description',
+  translateY: ['50px', '0px'],
+  opacity: [0, 1],
+  duration: 1000,
+});
+
+// Step 4: Animate the button (hero__button)
+timeline.add({
+  targets: '.hero__button',
+  translateY: ['50px', '0px'],
+  opacity: [0, 1],
+  duration: 1000,
+});
 
 /**
   |============================
