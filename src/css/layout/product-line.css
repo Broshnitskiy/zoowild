@@ -538,6 +538,18 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .product-line__heading-1 {
+    margin-left: 432px;
+  }
+
+  .product-line__heading-4 {
+    margin-left: 432px;
+  }
+
+  .product-line__heading-5 {
+    margin-left: 432px;
+  }
+
   .product-card-side-group {
     padding-top: 126px;
   }

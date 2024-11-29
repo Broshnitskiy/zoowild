@@ -274,6 +274,23 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .top-selling__title__part-1 {
+    margin-left: 432px;
+  }
+
+  .top-selling__title__part-2 {
+    margin-left: 200px;
+  }
+
+  .top-selling__title__part-3,
+  .top-selling__title__part-4 {
+    margin-left: 432px;
+  }
+
+  .top-selling__description {
+    margin-left: 432px;
+  }
+
   .top-selling__additional {
     bottom: 630px;
     left: 65px;

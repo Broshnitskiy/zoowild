@@ -274,10 +274,33 @@
     width: 70px;
     height: 70px;
   }
+
+  .offers__paw-1 {
+    left: 80%;
+  }
+  .offers__paw-2 {
+    left: 90%;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .offers__item-description {
     max-width: 460px;
+  }
+
+  .offers__title-part-1 {
+    margin-left: 432px;
+  }
+
+  .offers__title-part-2 {
+    margin-left: 156px;
+  }
+
+  .offers__title-part-4 {
+    margin-left: 432px;
+  }
+
+  .offers__subtitle {
+    margin-left: 432px;
   }
 }

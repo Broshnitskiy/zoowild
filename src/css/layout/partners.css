@@ -136,13 +136,25 @@
     width: 70px;
     height: 70px;
   }
+
+  .partners__paw-5 {
+    left: 150px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
+  .partners__title {
+    margin-left: 230px;
+  }
+
+  .partners__first-word {
+    margin-left: 205px;
+  }
+
   .partners__description {
     font-size: 28px;
     max-width: 435px;
     margin: 0;
-    margin-left: 582px;
+    margin-left: 432px;
   }
 }

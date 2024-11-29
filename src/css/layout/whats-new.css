@@ -306,6 +306,10 @@
     width: 70px;
     height: 70px;
   }
+
+  .whats-new__paw-2 {
+    right: 180px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

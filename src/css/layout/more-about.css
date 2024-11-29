@@ -685,6 +685,22 @@
     max-width: 290px;
   }
 
+  .more-about__text.more-about__text--position {
+    margin-left: 432px;
+  }
+
+  .more-about__text.more-about__text--color {
+    margin-left: 200px;
+  }
+
+  .more-about__text.more-about__text--position-last {
+    margin-left: 432px;
+  }
+
+  .more-about__description {
+    margin-left: 432px;
+  }
+
   .more-about__details-text {
     font-size: 18px;
   }
@@ -707,7 +723,7 @@
 
   .more-about__clinic-title-top,
   .more-about__clinic-title-bottom {
-    margin-left: 430px;
+    margin-left: 378px;
   }
 
   .more-about__clinic-title__accent {
@@ -715,7 +731,7 @@
   }
 
   .more-about__clinic-description {
-    margin-left: 430px;
+    margin-left: 378px;
   }
 
   .more-about__clinic-image-2-desk {
@@ -725,12 +741,12 @@
   }
 
   .more-about__clinic-button {
-    margin-left: 430px;
+    margin-left: 378px;
   }
 
   .more-about__clinic-image-1 {
     width: 418px;
     bottom: -160px;
-    left: calc(50% - 600px);
+    left: calc(50% - 640px);
   }
 }
