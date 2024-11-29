@@ -4,28 +4,8 @@
   |============================
 */
 
-// const props = {
-//   opacity: [1, 1],
-//   duration: 3000,
-//   easing: 'easeOutQuad',
-// };
-// // animation for .hero__image-caracal
-// anime({
-//   targets: '.hero__image-caracal',
-//   translateX: ['-100%', '0'],
-//   ...props,
-// });
-
-// // animation for .hero__image-snake
-// anime({
-//   targets: '.hero__image-snake',
-//   translateX: ['100%', '0%'],
-//   delay: 1000,
-//   ...props,
-// });
-
 const timeline = anime.timeline({
-  easing: 'cubicBezier(.5, .05, .1, .3)',
+  easing: 'easeOutQuad',
   duration: 2000,
 });
 
@@ -51,7 +31,7 @@ timeline.add({
   targets: '.hero__description',
   translateY: ['50px', '0px'],
   opacity: [0, 1],
-  duration: 1000,
+  duration: 1500,
 });
 
 // Step 4: Animate the button (hero__button)
