@@ -8,6 +8,7 @@ const timeline = anime.timeline({
   easing: 'easeOutQuad',
   duration: 2000,
 });
+const heroTitleRef = document.querySelector('.hero__title');
 
 timeline
   .add({
@@ -17,10 +18,12 @@ timeline
     duration: 2000,
     easing: 'easeOutBack',
     begin: () => {
-      document.querySelector('.hero__title').style.mixBlendMode = 'normal';
+      heroTitleRef.style.mixBlendMode = 'normal';
+      heroTitleRef.style.color = 'rgb(44, 216, 44)';
     },
     complete: () => {
-      document.querySelector('.hero__title').style.mixBlendMode = 'overlay';
+      heroTitleRef.style.mixBlendMode = 'overlay';
+      heroTitleRef.style.color = 'var(--indent-color)';
     },
   })
   .add({

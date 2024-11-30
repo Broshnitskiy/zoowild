@@ -7,6 +7,10 @@
   margin-top: -20px;
 }
 
+.statistics__container {
+  position: relative;
+}
+
 .statistics__title {
   font-family: var(--main-font);
   font-weight: 400;
@@ -275,19 +279,13 @@
 
 @media only screen and (min-width: 1440px) {
   .statistics__container {
-    gap: 120px;
-  }
-
-  .statistics__title {
-    font-size: 48px;
-    max-width: 500px;
+    gap: 0;
   }
 
   .statistics__button {
-    top: 200px;
-    left: calc(50% - 420px);
-    width: 300px;
-    height: 50px;
+    top: 150px;
+    left: 60px;
+    transform: translateX(0);
   }
 
   .statistics__button-text {
@@ -299,13 +297,43 @@
     height: 16px;
   }
 
+  .statistics__list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin-bottom: 0;
+  }
+
+  .statistics__item:nth-child(1),
+  .statistics__item:nth-child(2) {
+    border-bottom: none;
+    border-top: none;
+    padding-top: 40px;
+    padding-left: 16px;
+    padding-bottom: 60px;
+  }
+
+  .statistics__item:nth-child(4) {
+    width: 254.2px;
+  }
+
+  .statistics__item:nth-child(3),
+  .statistics__item:nth-child(4) {
+    padding: 40px 0 60px 16px;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .statistics__number {
+    font-size: 100px;
+  }
+
   .statistics__paw-1 {
-    top: 25px;
-    left: calc(50% + 175px);
+    top: 155px;
+    left: calc(50% + 100px);
   }
 
   .statistics__paw-2 {
-    bottom: 100px;
-    left: calc(50% - 320px);
+    bottom: 140px;
+    left: calc(50% - 180px);
   }
 }

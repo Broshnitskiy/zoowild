@@ -47,7 +47,6 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--indent-color);
   margin-bottom: 23px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -100,10 +99,9 @@
   line-height: 88%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  margin-left: 30px;
+  margin-left: 38px;
   color: var(--indent-color);
-  opacity: 1;
-  transition: color 0.5s ease, opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .hero__image-parrot {
@@ -158,8 +156,7 @@
   }
 
   .hero__button:hover .hero__button__text--catalog {
-    color: var(--secondary-color);
-    opacity: 0.8;
+    opacity: 0.5;
   }
 }
 
@@ -269,7 +266,7 @@
   .hero__button__text--catalog {
     font-size: 21px;
     line-height: 76%;
-    margin-left: 20px;
+    margin-left: 28px;
   }
 
   .hero__image-parrot {
