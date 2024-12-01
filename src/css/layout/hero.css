@@ -58,7 +58,6 @@
   text-shadow: 0 9px 20px rgba(0, 0, 0, 0.2), 0 37px 37px rgba(0, 0, 0, 0.15),
     0 82px 49px rgba(0, 0, 0, 0.12), 0 146px 59px rgba(0, 0, 0, 0.01),
     0 228px 64px rgba(0, 0, 0, 0), 1px 1px 0 #120e01;
-  /* mix-blend-mode: normal; */
   mix-blend-mode: overlay;
   color: var(--indent-color);
 

@@ -1,0 +1,128 @@
+.error-page {
+  padding-top: 90px;
+}
+
+.error-container {
+  position: relative;
+}
+
+.error-title {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 105%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.error-number {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 90%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+
+  text-shadow: 0 50px 150px rgba(0, 0, 0, 0.1),
+    0 200px 200px rgba(0, 0, 0, 0.08), 0 500px 300px rgba(0, 0, 0, 0.05),
+    0 800px 400px rgba(0, 0, 0, 0.02), 0 1000px 500px rgba(0, 0, 0, 0),
+    8px 6px 0 #120e01;
+}
+
+.page-cat-404 {
+  position: absolute;
+  top: 200px;
+  left: 70%;
+  width: 100px;
+}
+
+.catalog-link {
+  opacity: 1;
+  margin-bottom: 20px;
+}
+
+.error-page_links-wrapper {
+  text-align: center;
+}
+
+.error-page_home-link {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.error-page_home-link__text {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 21px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #a5bb7d;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+@media only screen and (min-width: 1200px) {
+  .error-page {
+    padding-top: 50px;
+  }
+
+  .error-title {
+    font-size: 102px;
+  }
+
+  .error-number {
+    font-size: 350px;
+    margin-bottom: 30px;
+
+    text-shadow: 0 161px 352px rgba(0, 0, 0, 0.2),
+      0 642px 642px rgba(0, 0, 0, 0.15), 0 1441px 865px rgba(0, 0, 0, 0.12),
+      0 2561px 1026px rgba(0, 0, 0, 0.01), 0 4003px 1120px rgba(0, 0, 0, 0),
+      14px 10px 0 #120e01;
+  }
+
+  .page-cat-404 {
+    position: absolute;
+    top: 300px;
+    left: 65%;
+    width: 404px;
+  }
+
+  .catalog-link {
+    margin: 0;
+  }
+
+  .error-page_links-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  .error-page_home-link {
+    display: inline-flex;
+    gap: 10px;
+  }
+
+  .error-page_home-link__text {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 21px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #a5bb7d;
+    border-bottom: 1px solid var(--primary-color);
+  }
+
+  .error-page_home-link:hover > svg {
+    fill: var(--primary-color);
+  }
+
+  .error-page_home-link:hover > svg > path {
+    fill: #fff;
+  }
+}

@@ -17,14 +17,6 @@ timeline
     opacity: [0, 1],
     duration: 2000,
     easing: 'easeOutBack',
-    // begin: () => {
-    //   heroTitleRef.style.mixBlendMode = 'normal';
-    //   heroTitleRef.style.color = 'rgb(44, 216, 44)';
-    // },
-    // complete: () => {
-    //   heroTitleRef.style.mixBlendMode = 'overlay';
-    //   heroTitleRef.style.color = 'var(--indent-color)';
-    // },
   })
   .add({
     targets: '.hero__description',
