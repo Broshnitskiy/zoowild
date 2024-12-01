@@ -65,6 +65,24 @@
   border-bottom: 1px solid var(--primary-color);
 }
 
+.error-page__paw-1 {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+.error-page__paw-2 {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+}
+
+.error-page__paw-3 {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
 @media only screen and (min-width: 1200px) {
   .error-page {
     padding-top: 50px;
@@ -124,5 +142,27 @@
 
   .error-page_home-link:hover > svg > path {
     fill: #fff;
+  }
+
+  .error-page__paw-1 {
+    width: 99px;
+    height: 118px;
+    top: 400px;
+    left: 200px;
+  }
+
+  .error-page__paw-2 {
+    width: 99px;
+    height: 118px;
+    bottom: 20px;
+    left: unset;
+    right: 50px;
+  }
+
+  .error-page__paw-3 {
+    width: 99px;
+    height: 118px;
+    top: 350px;
+    left: 10px;
   }
 }
