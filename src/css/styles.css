@@ -23,6 +23,7 @@
 @import url('./layout/advise.css');
 @import url('./layout/partners.css');
 @import url('./layout/why-we.css');
+@import url('./layout/page-404.css');
 
 /* components style */
 @import url('./components/marker.css');
