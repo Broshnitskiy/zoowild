@@ -52,6 +52,24 @@ timeline
       duration: 2500,
     },
     '-=2500'
+  )
+  .add(
+    {
+      targets: '.hero__image-parrot-secondary',
+      translateX: ['100%', '0%'],
+      opacity: [0, 1],
+      duration: 2000,
+    },
+    '-=1500'
+  )
+  .add(
+    {
+      targets: '.hero__image-parrot',
+      translateX: ['-100%', '0%'],
+      opacity: [0, 1],
+      duration: 2000,
+    },
+    '-=2000'
   );
 
 /**

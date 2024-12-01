@@ -113,6 +113,7 @@
   left: -10px;
   width: 82px;
   pointer-events: none;
+  opacity: 0;
 }
 
 .hero__image-parrot-secondary {
@@ -121,6 +122,7 @@
   top: -50px;
   right: 10px;
   pointer-events: none;
+  opacity: 0;
 }
 
 .hero__image-caracal {
