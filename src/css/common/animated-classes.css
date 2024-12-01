@@ -4,6 +4,7 @@
 }
 
 .zoom-up,
+.zoom-up-rotate,
 .animate-left,
 .animate-right {
   opacity: 0;

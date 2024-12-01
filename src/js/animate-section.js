@@ -1,109 +1,91 @@
 /**
   |============================
-  | fade up
+  | Universal Animation Observer
   |============================
 */
 
-const observerFadeUp = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        anime({
-          targets: entry.target,
-          translateY: ['50px', '0px'],
-          opacity: [0, 1],
-          duration: 1000,
-          easing: 'easeOutQuad',
-        });
-        observer.unobserve(entry.target);
-      }
-    });
+function createAnimationObserver({
+  targetsSelector,
+  animationProps,
+  threshold = 0.1,
+}) {
+  const observer = new IntersectionObserver(
+    (entries, observerInstance) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          anime({
+            targets: entry.target,
+            ...animationProps,
+          });
+          observerInstance.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold }
+  );
+
+  const elements = document.querySelectorAll(targetsSelector);
+  elements.forEach(element => observer.observe(element));
+}
+
+// Fade up animation
+createAnimationObserver({
+  targetsSelector: '.animate-up',
+  animationProps: {
+    translateY: ['50px', '0px'],
+    opacity: [0, 1],
+    duration: 1000,
+    easing: 'easeOutQuad',
   },
-  { threshold: 0.1 }
-);
+});
 
-const textRefs = document.querySelectorAll('.animate-up');
-textRefs.forEach(element => observerFadeUp.observe(element));
-
-/**
-  |============================
-  | zoom up
-  |============================
-*/
-
-const observerZoom = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        anime({
-          targets: entry.target,
-          scale: [0.5, 1],
-          opacity: [0, 1],
-          duration: 1300,
-          easing: 'easeOutQuad',
-        });
-        observer.unobserve(entry.target);
-      }
-    });
+// Zoom up animation
+createAnimationObserver({
+  targetsSelector: '.zoom-up',
+  animationProps: {
+    scale: [0.5, 1],
+    opacity: [0, 1],
+    duration: 1300,
+    easing: 'easeOutQuad',
   },
-  { threshold: 0.4 }
-);
+  threshold: 0.4,
+});
 
-const zoomRefEl = document.querySelectorAll('.zoom-up');
-zoomRefEl.forEach(element => observerZoom.observe(element));
-
-/**
-  |============================
-  | fade right
-  |============================
-*/
-
-const observerFadeRight = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        anime({
-          targets: entry.target,
-          translateX: ['100%', '0%'],
-          opacity: [0, 1],
-          duration: 1500,
-          easing: 'easeOutQuad',
-          delay: 500,
-        });
-        observer.unobserve(entry.target);
-      }
-    });
+// Zoom up with rotate animation
+createAnimationObserver({
+  targetsSelector: '.zoom-up-rotate',
+  animationProps: {
+    scale: [0.5, 1],
+    opacity: [0, 1],
+    rotate: ['240deg', '-30deg'],
+    duration: 1300,
+    easing: 'easeOutQuad',
   },
-  { threshold: 0.3 }
-);
+  threshold: 0.4,
+});
 
-const rightRefs = document.querySelectorAll('.animate-right');
-rightRefs.forEach(element => observerFadeRight.observe(element));
-
-/**
-  |============================
-  | fade left
-  |============================
-*/
-
-const observerFadeLeft = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        anime({
-          targets: entry.target,
-          translateX: ['-100%', '0%'],
-          opacity: [0, 1],
-          duration: 1500,
-          easing: 'easeOutQuad',
-          delay: 500,
-        });
-        observer.unobserve(entry.target);
-      }
-    });
+// Fade right animation
+createAnimationObserver({
+  targetsSelector: '.animate-right',
+  animationProps: {
+    translateX: ['100%', '0%'],
+    opacity: [0, 1],
+    duration: 1500,
+    easing: 'easeOutQuad',
+    delay: 500,
   },
-  { threshold: 0.3 }
-);
+  threshold: 0.3,
+});
 
-const leftRefs = document.querySelectorAll('.animate-left');
-leftRefs.forEach(element => observerFadeLeft.observe(element));
+// Fade left animation
+createAnimationObserver({
+  targetsSelector: '.animate-left',
+  animationProps: {
+    translateX: ['-100%', '0%'],
+    opacity: [0, 1],
+    duration: 1500,
+    easing: 'easeOutQuad',
+    delay: 500,
+  },
+  threshold: 0.3,
+});

@@ -23,6 +23,7 @@
 @import url('./layout/advise.css');
 @import url('./layout/partners.css');
 @import url('./layout/why-we.css');
+@import url('./layout/modal-video.css');
 @import url('./layout/page-404.css');
 
 /* components style */
@@ -31,3 +32,4 @@
 @import url('./components/pagination-counter.css');
 @import url('./components/price-label.css');
 @import url('./components/quick-btns.css');
+@import url('./components/modal.css');
