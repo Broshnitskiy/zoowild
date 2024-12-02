@@ -69,7 +69,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .product-card-1 {
@@ -113,11 +113,12 @@
 .product-card-1__prices-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .product-card__prices {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 3px;
 }
 
@@ -143,6 +144,7 @@
   text-align: justify;
   color: #5b6153;
   opacity: 0.7;
+  margin-top: 5px;
 }
 
 .product-card-1__actions {
@@ -152,9 +154,20 @@
   align-items: center;
 }
 
+.product-card-1__icon-1 {
+  width: 9px;
+  height: 9px;
+}
+
+.product-card-1__icon-2 {
+  width: 16px;
+  height: 16px;
+}
+
 .product-card__button {
   background-color: transparent;
   border: none;
+  line-height: 0;
 }
 
 .product-card-side-group {
@@ -221,6 +234,7 @@
 .product-card__icon-1 {
   padding: 3px;
   width: 18px;
+  height: 18px;
 }
 
 .product-card__icon-2 {
@@ -301,7 +315,7 @@
   .product-line__list {
     flex-direction: row-reverse;
     gap: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
     margin-top: -45px;
   }
 
@@ -326,10 +340,12 @@
 
   .product-card-1__icon-1 {
     width: 12px;
+    height: 12px;
   }
 
   .product-card-1__icon-2 {
     width: 19px;
+    height: 19px;
   }
 
   .product-card-side-group {
@@ -456,10 +472,12 @@
 
   .product-card-1__icon-1 {
     width: 20px;
+    height: 20px;
   }
 
   .product-card-1__icon-2 {
     width: 30px;
+    height: 30px;
   }
 
   .product-card__price--current {
@@ -510,6 +528,7 @@
 
   .product-card-1__prices-wrapper {
     margin-top: auto;
+    align-items: center;
   }
 
   .product-card__prices {
@@ -522,6 +541,7 @@
 
   .product-card__icon-1 {
     width: 26px;
+    height: 26px;
   }
 
   .product-card__icon-2 {
@@ -552,5 +572,27 @@
 
   .product-card-side-group {
     padding-top: 126px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .product-card-1,
+  .product-card-2,
+  .product-card-3 {
+    transition: scale 250ms ease;
+  }
+
+  .product-card-1:hover,
+  .product-card-2:hover,
+  .product-card-3:hover {
+    scale: 1.01;
+  }
+
+  .product-card__button:hover > svg {
+    fill: var(--primary-color);
+  }
+
+  .product-card__button:hover > svg path {
+    stroke: #fff;
   }
 }

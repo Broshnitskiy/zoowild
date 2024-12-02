@@ -45,6 +45,7 @@
 }
 
 .category__link-img {
+  pointer-events: none;
   width: 95px;
   position: absolute;
   top: -52px;
