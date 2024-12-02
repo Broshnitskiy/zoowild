@@ -101,7 +101,7 @@
 .more-about__company-btn {
   display: inline-flex;
   align-items: center;
-  gap: 11px;
+  gap: 10px;
   background-color: transparent;
   border: none;
 }
@@ -114,7 +114,7 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--primary-color);
-  text-decoration: underline;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .more-about__paw-1 {
@@ -545,6 +545,18 @@
     margin-left: 350px;
   }
 
+  .more-about__company-btn-icon {
+    margin-top: 5px;
+  }
+
+  .more-about__company-btn:hover > svg {
+    fill: var(--primary-color);
+  }
+
+  .more-about__company-btn:hover > svg > path {
+    fill: #fff;
+  }
+
   .more-about__logo {
     width: 282px;
   }
@@ -748,5 +760,32 @@
     width: 418px;
     bottom: -160px;
     left: calc(50% - 640px);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .more-about__clinic-button {
+    transition: background-color 300ms ease;
+  }
+
+  .more-about__clinic-button-text {
+    transition: color 300ms ease, transform 500ms ease;
+  }
+
+  .more-about__clinic-button-icon {
+    transition: transform 800ms ease;
+  }
+
+  .more-about__clinic-button:hover {
+    background-color: var(--grand-color);
+  }
+
+  .more-about__clinic-button:hover .more-about__clinic-button-icon {
+    transform: translate(184px) rotate(360deg);
+  }
+
+  .more-about__clinic-button:hover .more-about__clinic-button-text {
+    color: var(--primary-color);
+    transform: translate(-40px);
   }
 }

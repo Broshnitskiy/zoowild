@@ -1,7 +1,7 @@
 .quick-btn-list {
   position: fixed;
   right: 4px;
-  bottom: 10px;
+  bottom: 100px;
   z-index: 100;
 
   display: flex;
@@ -57,7 +57,7 @@
 @media only screen and (min-width: 1200px) {
   .quick-btn-list {
     right: 6px;
-    bottom: 28px;
+    bottom: 58px;
     gap: 20px;
   }
 

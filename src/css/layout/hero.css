@@ -160,8 +160,29 @@
     color: #f2e533;
   }
 
+  .hero__button {
+    transition: background-color 300ms ease;
+  }
+
+  .hero__button__text--catalog {
+    transition: color 300ms ease, transform 500ms ease;
+  }
+
+  .hero__button__icon--catalog {
+    transition: transform 800ms ease;
+  }
+
+  .hero__button:hover {
+    background-color: var(--grand-color);
+  }
+
+  .hero__button:hover .hero__button__icon--catalog {
+    transform: translate(184px) rotate(360deg);
+  }
+
   .hero__button:hover .hero__button__text--catalog {
-    opacity: 0.5;
+    color: var(--primary-color);
+    transform: translate(-30px);
   }
 }
 
