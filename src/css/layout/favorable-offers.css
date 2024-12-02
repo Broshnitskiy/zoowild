@@ -62,7 +62,7 @@
 .offers__item-icon {
   position: absolute;
   bottom: 0;
-  right: 20px;
+  right: 0;
 }
 
 .offers__item-image {
@@ -93,14 +93,16 @@
   line-height: 77%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  text-decoration: underline;
   text-align: center;
   color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 4px;
 }
 
 .offers__item-link-icon {
   width: 18px;
   height: 18px;
+  margin-bottom: 4px;
 }
 
 .offers__swiper {
@@ -182,8 +184,12 @@
 
   .offers__item-description {
     font-size: 15px;
-    max-width: 378px;
-    margin: 0 auto;
+    max-width: 317px;
+    margin-left: 228px;
+  }
+
+  .offers__item-link {
+    margin-right: 150px;
   }
 
   .offers__swiper {
@@ -248,7 +254,12 @@
 
   .offers__item-description {
     font-size: 18px;
-    max-width: 380px;
+    max-width: 490px;
+    margin-left: 352px;
+  }
+
+  .offers__item-link {
+    margin-right: 238px;
   }
 
   .offers__item-link-anchor {
@@ -302,5 +313,32 @@
 
   .offers__subtitle {
     margin-left: 432px;
+  }
+
+  .offers__item-description {
+    max-width: 604px;
+    margin-left: 430px;
+  }
+
+  .offers__item-link {
+    margin-right: 285px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .offers__item-link-anchor:hover > svg {
+    fill: var(--primary-color);
+  }
+
+  .offers__item-link-anchor:hover > svg > path {
+    fill: #fff;
+  }
+
+  .swiper-slide__offers-link:hover .offers__item-icon {
+    fill: var(--primary-color);
+  }
+
+  .swiper-slide__offers-link:hover .offers__item-icon > path {
+    fill: #fff;
   }
 }

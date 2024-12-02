@@ -5,3 +5,4 @@ import './favorable-offers-slider.js';
 import './hero-paralax.js';
 import './video-modal.js';
 import './product-line.js';
+import './advise.js';

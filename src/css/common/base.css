@@ -24,20 +24,17 @@ body {
   letter-spacing: -0.02em;
 }
 
-button,
-a {
+button {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
 
-button:active,
-a:active {
+button:active {
   opacity: 0.8;
 }
 
 @media (hover: hover) and (pointer: fine) {
-  button:hover,
-  a:hover {
+  button:hover {
     opacity: 0.8;
   }
 }

@@ -7,7 +7,7 @@
 function createAnimationObserver({
   targetsSelector,
   animationProps,
-  threshold = 0.2,
+  threshold = 0.1,
 }) {
   const observer = new IntersectionObserver(
     (entries, observerInstance) => {
@@ -48,7 +48,7 @@ createAnimationObserver({
     duration: 1300,
     easing: 'easeOutQuad',
   },
-  threshold: 0.4,
+  threshold: 0.3,
 });
 
 // Zoom up with rotate animation
@@ -74,7 +74,7 @@ createAnimationObserver({
     easing: 'easeOutQuad',
     delay: 500,
   },
-  threshold: 0.3,
+  threshold: 0.2,
 });
 
 // Fade left animation
@@ -87,5 +87,5 @@ createAnimationObserver({
     easing: 'easeOutQuad',
     delay: 500,
   },
-  threshold: 0.3,
+  threshold: 0.2,
 });
