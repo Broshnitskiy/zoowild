@@ -62,8 +62,10 @@
   line-height: 49%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  text-decoration: underline;
   color: var(--grand-color);
+  padding-bottom: 7px;
+
+  border-bottom: 1px solid var(--grand-color);
 }
 
 .top-selling__image {
@@ -73,7 +75,6 @@
 .top-selling__catalog-icon {
   width: 18px;
   height: 18px;
-  margin-top: 5px;
 }
 
 .top-selling__decoration {
@@ -177,7 +178,6 @@
   .top-selling__catalog-icon {
     width: 18px;
     height: 18px;
-    margin-top: 5px;
   }
 
   .top-selling__decoration {
@@ -247,7 +247,7 @@
   .top-selling__catalog-icon {
     width: 18px;
     height: 18px;
-    margin-top: 5px;
+    margin-bottom: 6px;
   }
 
   .top-selling__decoration {
@@ -270,6 +270,16 @@
   .top-selling__paw-5 {
     width: 70px;
     height: 70px;
+  }
+
+  .top-selling__paw-1 {
+    left: 14%;
+  }
+  .top-selling__paw-2 {
+    left: 90%;
+  }
+  .top-selling__paw-5 {
+    left: 400px;
   }
 }
 
@@ -294,5 +304,15 @@
   .top-selling__additional {
     bottom: 630px;
     left: 65px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .top-selling__catalog-link:hover svg {
+    fill: #fff;
+  }
+
+  .top-selling__catalog-link:hover svg path {
+    fill: var(--primary-color);
   }
 }

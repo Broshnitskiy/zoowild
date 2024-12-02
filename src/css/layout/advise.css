@@ -331,6 +331,10 @@
     width: 70px;
     height: 70px;
   }
+
+  .advise__paw-1 {
+    left: 15%;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

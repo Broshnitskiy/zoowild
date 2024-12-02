@@ -136,7 +136,6 @@
   .price-label__info {
     gap: 0;
     justify-content: space-between;
-    align-items: flex-end;
     margin-bottom: 6px;
   }
 
@@ -150,6 +149,7 @@
 
   .price-label__info-text {
     font-size: 23px;
+    margin-top: 10px;
   }
 
   .price-label__icon__favourite-btn {
@@ -178,7 +178,6 @@
   .price-label__info {
     gap: 0;
     justify-content: space-between;
-    align-items: flex-end;
     margin-bottom: 6px;
   }
 
@@ -193,5 +192,15 @@
 
   .price-label__icon {
     width: 17px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .price-label__cart-btn:hover svg {
+    fill: var(--primary-color);
+  }
+
+  .price-label__cart-btn:hover svg path {
+    fill: #fff;
   }
 }
