@@ -114,6 +114,7 @@
 
 .category__card-arrow {
   width: 28px;
+  height: 28px;
 }
 
 .category__card-image {
@@ -391,6 +392,7 @@
 
   .category__card-arrow {
     width: 43px;
+    height: 43px;
   }
 
   .category__card-image {
@@ -512,5 +514,30 @@
 
   .category__description {
     margin-left: 432px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .category__card__link {
+    transition: box-shadow 350ms ease;
+  }
+
+  .category__card__link:hover {
+    box-shadow: 0 9px 20px rgba(0, 0, 0, 0.03), 0 38px 38px rgba(0, 0, 0, 0.02),
+      0 84px 50px rgba(0, 0, 0, 0.05), 0 149px 60px rgba(0, 0, 0, 0.01),
+      0 233px 66px rgba(0, 0, 0, 0);
+  }
+
+  .category__card-arrow,
+  .category__card-arrow > path {
+    transition: fill 350ms ease;
+  }
+
+  .category__card__link:hover .category__card-arrow {
+    fill: var(--primary-color);
+  }
+
+  .category__card__link:hover .category__card-arrow > path {
+    fill: #fff;
   }
 }
