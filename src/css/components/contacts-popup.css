@@ -7,7 +7,7 @@
   padding: 10px;
   width: 240px;
 
-  border-radius: 10px;
+  border-radius: 20px;
   backdrop-filter: blur(4px);
   box-shadow: 0 0 15px rgba(91, 97, 83, 0.15);
   background: rgba(255, 255, 255, 0.9);
@@ -33,7 +33,7 @@
 }
 
 .contacts-popup__content {
-  border-radius: 18px;
+  border-radius: 12px;
   background: #5b6153;
 }
 
@@ -180,9 +180,6 @@
 
   .contacts-popup__phone {
     font-size: 38px;
-  }
-
-  .contacts-popup__phone {
     margin-bottom: 15px;
   }
 
@@ -203,7 +200,6 @@
 
   .contacts-popup__button-text {
     font-size: 18px;
-
     padding-bottom: 4px;
   }
 }
@@ -219,5 +215,9 @@
 
   .contacts-popup__social-link:hover {
     color: #fff;
+  }
+
+  .contacts-popup__phone:hover {
+    opacity: 0.6;
   }
 }
