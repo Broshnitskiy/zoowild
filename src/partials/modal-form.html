@@ -1,5 +1,154 @@
 <div class="overlay is-hidden" data-form-modal>
   <div class="modal modal__form-content">
+    <div class="modal__owner">
+      <img
+        class="modal__owner-image"
+        src="img/form-modal/owner.webp"
+        alt="Фото"
+      />
+      <ul class="modal__socials-list">
+        <li class="modal__socials-item">
+          <a
+            class="modal__socials-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="#"
+          >
+            <img
+              class="modal__socials-icon"
+              src="img/svg/insta-icon.svg"
+              alt="Іконка"
+            />
+          </a>
+        </li>
+        <li class="modal__socials-item">
+          <a
+            class="modal__socials-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="#"
+          >
+            <img
+              class="modal__socials-icon"
+              src="img/svg/mail-icon.svg"
+              alt="Іконка"
+            />
+          </a>
+        </li>
+        <li class="modal__socials-item">
+          <a
+            class="modal__socials-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="#"
+          >
+            <img
+              class="modal__socials-icon"
+              src="img/svg/mes-icon.svg"
+              alt="Іконка"
+            />
+          </a>
+        </li>
+        <li class="modal__socials-item">
+          <a
+            class="modal__socials-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="#"
+          >
+            <img
+              class="modal__socials-icon"
+              src="img/svg/whatsup-icon.svg"
+              alt="Іконка"
+            />
+          </a>
+        </li>
+        <li class="modal__socials-item">
+          <a
+            class="modal__socials-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="#"
+          >
+            <img
+              class="modal__socials-icon"
+              src="img/svg/viber-icon.svg"
+              alt="Іконка"
+            />
+          </a>
+        </li>
+        <li class="modal__socials-item">
+          <a
+            class="modal__socials-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="#"
+          >
+            <img
+              class="modal__socials-icon"
+              src="img/svg/telegram-icon.svg"
+              alt="Іконка"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="modal__form-container">
+      <form class="form" name="form" autocomplete="off">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">
+            Залиште ваші дані і найближчим часом ми з вами зв'яжемося
+          </legend>
+
+          <input
+            name="name"
+            type="text"
+            class="form__input form__input--name"
+            placeholder="Ім'я*"
+            id="form3Name"
+            required
+          />
+
+          <input
+            name="phone"
+            type="tel"
+            class="form__input form__input--phone"
+            placeholder="Телефон*"
+            required
+          />
+
+          <input
+            name="email"
+            type="email"
+            class="form__input form__input--email"
+            placeholder="Пошта"
+          />
+
+          <label class="form__checkbox-label">
+            <input type="checkbox" class="form__checkbox" required />
+            Підтверджуючи, ви погоджуєтесь з
+            <a href="#" class="form__privacy-link"
+              >політикою конфіденсальності</a
+            >
+          </label>
+
+          <button
+            type="submit"
+            class="form__button"
+            aria-label="Замовити дзвінок"
+          >
+            <img
+              class="form__button-icon"
+              src="img/svg/snake.svg"
+              alt="Іконка"
+            />
+            <p class="form__button-text">Замовити дзвінок</p>
+          </button>
+        </fieldset>
+      </form>
+    </div>
+
     <button type="button" class="close-modal-btn" data-close-form-modal>
       <svg
         width="40"
