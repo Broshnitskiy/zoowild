@@ -96,12 +96,72 @@
   z-index: 2;
 }
 
-.whats-new__image--emblems {
+.whats-new__emblems-group {
   position: absolute;
-  top: 220px;
-  left: 5px;
+  top: 200px;
+  left: -10px;
   width: 120px;
   z-index: 2;
+}
+
+.whats-new__emblem {
+  border: 1px solid rgba(45, 155, 38, 0.2);
+  border-radius: 55px;
+
+  width: 65px;
+  height: 22px;
+
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whats-new__emblem-1 {
+  position: absolute;
+  top: 4px;
+  left: 40px;
+
+  z-index: 3;
+  background: #a5bb7d;
+  transform: rotate(-4deg);
+  color: #faffee;
+}
+
+.whats-new__emblem-2 {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 1;
+  background: rgba(243, 246, 243, 0.8);
+  transform: rotate(-35deg);
+  color: #5b6153;
+}
+
+.whats-new__emblem-3 {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  z-index: 4;
+  background: rgba(243, 246, 243, 0.95);
+  transform: rotate(6deg);
+  color: #5b6153;
+}
+
+.whats-new__emblem-4 {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  z-index: 2;
+  width: 74px;
+  height: 19px;
+  background: rgba(255, 255, 255, 0.4);
+  transform: rotate(59deg);
+  color: #5b6153;
 }
 
 .whats-new__image--decor {
@@ -198,12 +258,11 @@
     z-index: 2;
   }
 
-  .whats-new__image--emblems {
+  .whats-new__emblems-group {
     position: absolute;
-    top: 0;
-    left: 40px;
-    width: 200px;
-    z-index: 2;
+    top: 55px;
+    left: 50px;
+    width: 120px;
   }
 
   .whats-new__image--decor {
@@ -281,11 +340,37 @@
     z-index: 2;
   }
 
-  .whats-new__image--emblems {
-    top: 0;
-    left: 100px;
-    width: 260px;
-    z-index: 2;
+  .whats-new__emblems-group {
+    position: absolute;
+    top: 115px;
+    left: 150px;
+    width: 180px;
+  }
+
+  .whats-new__emblem {
+    width: 86px;
+    height: 26px;
+    font-size: 12px;
+  }
+
+  .whats-new__emblem-1 {
+    top: 4px;
+    left: 40px;
+  }
+
+  .whats-new__emblem-2 {
+    top: 30px;
+    left: -20px;
+  }
+
+  .whats-new__emblem-3 {
+    top: 50px;
+    left: 30px;
+  }
+
+  .whats-new__emblem-4 {
+    top: 50px;
+    left: 80px;
   }
 
   .whats-new__image--decor {
@@ -328,5 +413,23 @@
 
   .whats-new__description {
     margin-left: 426px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .whats-new__product-info__link:hover > button > svg {
+    fill: var(--primary-color);
+  }
+
+  .whats-new__product-info__link:hover > button > svg path {
+    fill: #fff;
+  }
+
+  .price-label__cart-btn:hover > svg {
+    fill: var(--primary-color);
+  }
+
+  .price-label__cart-btn:hover > svg path {
+    fill: #fff;
   }
 }

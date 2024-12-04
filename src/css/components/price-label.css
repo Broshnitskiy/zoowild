@@ -96,6 +96,7 @@
 
 .price-label__icon {
   width: 14px;
+  height: 14px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -161,6 +162,7 @@
 
   .price-label__icon {
     width: 15px;
+    height: 15px;
   }
 }
 
@@ -192,6 +194,7 @@
 
   .price-label__icon {
     width: 17px;
+    height: 17px;
   }
 }
 

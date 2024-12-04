@@ -64,6 +64,19 @@ createAnimationObserver({
   threshold: 0.4,
 });
 
+// Zoom up with rotate_2 animation
+createAnimationObserver({
+  targetsSelector: '.zoom-up-rotate_2',
+  animationProps: {
+    scale: [0.3, 1],
+    opacity: [0, 1],
+    rotate: ['360deg', '0deg'],
+    duration: 1500,
+    easing: 'easeOutQuad',
+  },
+  threshold: 0.4,
+});
+
 // Fade right animation
 createAnimationObserver({
   targetsSelector: '.animate-right',
