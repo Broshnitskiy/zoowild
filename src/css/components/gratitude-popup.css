@@ -1,0 +1,82 @@
+.modal__gratitude-content {
+  width: 95vw;
+  max-width: 420px;
+  height: auto;
+  max-height: 100%;
+  padding: 40px 12px 12px 20px;
+  text-align: center;
+}
+
+.modal__gratitude__text {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #5b6153;
+
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+
+.modal__gratitude__img {
+  max-width: 160px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+
+.modal__gratitude__paw-1 {
+  position: absolute;
+  top: 40%;
+  left: 60px;
+  width: 30px;
+  height: 20px;
+}
+
+.modal__gratitude__paw-2 {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  width: 30px;
+  height: 20px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .modal__gratitude-content {
+    width: 700px;
+    max-width: unset;
+    height: 600px;
+    padding: 60px 24px 24px 24px;
+  }
+
+  .modal__gratitude__text {
+    font-size: 30px;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+
+    max-width: 450px;
+    margin-bottom: 30px;
+  }
+
+  .modal__gratitude__img {
+    max-width: 264px;
+    margin-bottom: 20px;
+  }
+
+  .modal__gratitude__paw-1 {
+    top: 40%;
+    left: 60px;
+    width: 60px;
+    height: 50px;
+  }
+
+  .modal__gratitude__paw-2 {
+    right: 10%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+  }
+}

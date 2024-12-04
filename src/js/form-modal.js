@@ -1,7 +1,11 @@
 const openFormBtnRef = document.querySelectorAll('[data-modal-form-open]');
 const closeFormBtnRef = document.querySelector('[data-close-form-modal]');
+const closeGratitudeBtnRef = document.querySelector(
+  '[data-close-gratitude-modal]'
+);
 const modalFormRef = document.querySelector('[data-form-modal]');
 const contactsPopupRef = document.querySelector('[data-contacts-popup]');
+const gratitudePopupRef = document.querySelector('[data-gratitude-modal]');
 const formRef = document.querySelector('.form');
 
 openFormBtnRef.forEach(btn => btn.addEventListener('click', openModal));
@@ -29,6 +33,11 @@ function closeModal() {
   closeFormBtnRef.removeEventListener('click', closeModal);
 }
 
+function closeGraduateModal() {
+  gratitudePopupRef.classList.add('is-hidden');
+  closeGratitudeBtnRef.removeEventListener('click', closeGraduateModal);
+}
+
 function handleKeyPress(event) {
   if (event.key === 'Escape') {
     closeModal();
@@ -51,14 +60,16 @@ function handleFormSubmit(event) {
 
   closeModal();
 
-  if (contactsPopupRef.classList.contains('is-hidden')) {
-    contactsPopupRef.classList.remove('is-hidden');
+  formRef.reset();
+
+  if (gratitudePopupRef.classList.contains('is-hidden')) {
+    gratitudePopupRef.classList.remove('is-hidden');
+    closeGratitudeBtnRef.addEventListener('click', closeGraduateModal);
   }
 
   setTimeout(() => {
-    if (!contactsPopupRef.classList.contains('is-hidden')) {
-      contactsPopupRef.classList.add('is-hidden');
+    if (!gratitudePopupRef.classList.contains('is-hidden')) {
+      gratitudePopupRef.classList.add('is-hidden');
     }
-    document.body.style.overflowY = 'visible';
-  }, 7000);
+  }, 5000);
 }
