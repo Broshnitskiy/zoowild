@@ -106,7 +106,8 @@
             type="text"
             class="form__input form__input--name"
             placeholder="Ім'я*"
-            id="form3Name"
+            minlength="2"
+            title="Ім'я повинно містити мінімум 2 літери і не містити цифр"
             required
           />
 
@@ -115,6 +116,8 @@
             type="tel"
             class="form__input form__input--phone"
             placeholder="Телефон*"
+            minlength="6"
+            title="Телефон повинен містити мінімум 6 цифр"
             required
           />
 
@@ -125,12 +128,19 @@
             placeholder="Пошта"
           />
 
-          <label class="form__checkbox-label">
-            <input type="checkbox" class="form__checkbox" required />
-            Підтверджуючи, ви погоджуєтесь з
-            <a href="#" class="form__privacy-link"
-              >політикою конфіденсальності</a
-            >
+          <input
+            id="form__checkbox"
+            type="checkbox"
+            class="form__checkbox visually-hidden"
+            required
+          />
+          <label for="form__checkbox" class="form__checkbox-label">
+            <p>
+              <span>Підтверджуючи, ви погоджуєтесь з</span>
+              <a href="#" class="form__privacy-link"
+                >політикою конфіденсальності</a
+              >
+            </p>
           </label>
 
           <button
