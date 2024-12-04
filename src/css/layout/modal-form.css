@@ -1,35 +1,36 @@
 .modal__form-content {
-  display: flex;
-  gap: 20px;
-  width: 1024px;
-  height: 600px;
-  padding: 40px;
+  width: 95vw;
+  height: auto;
+  max-height: 100%;
+  padding: 12px;
 }
 
 .modal__owner-image {
-  max-width: 395px;
-  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100px;
+  margin-bottom: 10px;
 }
 
 .modal__socials-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 12px;
-  border-radius: 33px;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 20px;
   backdrop-filter: blur(5.7964911460876465px);
   box-shadow: 0 0 12px 0 rgba(89, 98, 72, 0.15);
   background: #fff;
 }
 
 .modal__socials-icon {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
 }
 
 .form {
-  padding-top: 55px;
+  padding-top: 30px;
 }
 
 .form__fieldset {
@@ -38,15 +39,15 @@
 }
 
 .form__legend {
-  font-size: 18px;
-  line-height: 110%;
+  font-size: 16px;
+  line-height: 100%;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #5b6153;
   max-width: 220px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .form__input {
@@ -55,18 +56,18 @@
   border-radius: 17px;
   backdrop-filter: blur(5.7964911460876465px);
   background: #fff;
-  height: 58px;
+  height: 38px;
   width: 100%;
-  padding: 20px;
+  padding: 14px;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .form__button {
   background-color: var(--primary-color);
   border: 1px solid #5b6153;
   border-radius: 84px;
-  width: 271px;
+  width: 250px;
   height: 47px;
 
   display: flex;
@@ -78,13 +79,13 @@
 .form__button-text {
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 23px;
+  font-size: 18px;
   line-height: 81%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  margin-left: 14px;
+  margin-left: 20px;
 }
 
 .form__checkbox-label {
@@ -132,4 +133,91 @@
 
 .form__checkbox:focus + .form__checkbox-label::before {
   box-shadow: 0 0 0 2px #04a427;
+}
+
+@media only screen and (min-width: 1200px) {
+  .modal__form-content {
+    display: flex;
+    gap: 20px;
+    width: 1024px;
+    height: 600px;
+    padding: 40px;
+  }
+
+  .modal__owner-image {
+    max-width: 395px;
+    margin-bottom: 12px;
+  }
+
+  .modal__socials-list {
+    gap: 10px;
+    padding: 12px;
+    border-radius: 33px;
+  }
+
+  .modal__socials-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .form {
+    padding-top: 55px;
+  }
+
+  .form__legend {
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    max-width: 220px;
+    margin-bottom: 40px;
+  }
+
+  .form__input {
+    border-radius: 17px;
+    height: 58px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  .form__button {
+    border-radius: 84px;
+    width: 271px;
+    height: 47px;
+    padding: 2px;
+  }
+
+  .form__button-text {
+    font-size: 23px;
+    line-height: 81%;
+    letter-spacing: -0.01em;
+
+    margin-left: 14px;
+  }
+
+  .form__checkbox-label {
+    max-width: 260px;
+    margin: 20px auto 20px auto;
+
+    font-size: 14px;
+    line-height: 120%;
+
+    gap: 6px;
+  }
+
+  .form__checkbox-label span {
+    opacity: 0.5;
+  }
+
+  .modal__form-container {
+    flex: 1;
+  }
+
+  .form__checkbox-label::before {
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--primary-color);
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
 }
