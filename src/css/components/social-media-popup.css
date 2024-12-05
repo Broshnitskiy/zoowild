@@ -1,7 +1,7 @@
 .socials {
   position: fixed;
-  right: 50px;
-  bottom: 100px;
+  right: 60px;
+  bottom: 145px;
   z-index: 100;
 
   display: flex;
@@ -38,8 +38,8 @@
 
 @media only screen and (min-width: 1200px) {
   .socials {
-    right: 60px;
-    bottom: 50px;
+    right: 80px;
+    bottom: 119px;
     gap: 14px;
     border-radius: 40px;
     padding: 6px;

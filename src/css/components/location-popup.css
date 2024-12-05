@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 10;
 }
 
 .location-popup {
@@ -121,9 +121,12 @@
 }
 
 .location-popup__map-link {
+  border: none;
+  background-color: transparent;
   display: inline-block;
   margin-left: 10px;
   font-size: 14px;
+  color: inherit;
 
   border-bottom: 1px solid #5b6153;
 }

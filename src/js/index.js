@@ -8,3 +8,4 @@ import './form-modal.js';
 import './product-line.js';
 import './advise.js';
 import './quick-btns.js';
+import './map-modal.js';
