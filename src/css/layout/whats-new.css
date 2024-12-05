@@ -96,6 +96,25 @@
   z-index: 2;
 }
 
+.whats-new__brand-text {
+  position: absolute;
+  top: 148px;
+  left: 0;
+  z-index: 1;
+
+  font-weight: 200;
+  font-size: 61px;
+  line-height: 71%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #faffee;
+
+  mix-blend-mode: soft-light;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
 .whats-new__emblems-group {
   position: absolute;
   top: 250px;
@@ -258,6 +277,12 @@
     z-index: 2;
   }
 
+  .whats-new__brand-text {
+    top: 148px;
+    left: 0;
+    font-size: 147px;
+  }
+
   .whats-new__emblems-group {
     position: absolute;
     top: 55px;
@@ -338,6 +363,12 @@
     left: calc(50% - 230px);
     width: 400px;
     z-index: 2;
+  }
+
+  .whats-new__brand-text {
+    top: 69px;
+    left: 0;
+    font-size: 236px;
   }
 
   .whats-new__emblems-group {
