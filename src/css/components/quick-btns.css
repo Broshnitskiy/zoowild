@@ -25,8 +25,8 @@
   width: 17px;
 }
 
-.quick-btn-list__item__btn::after,
-.quick-btn-list__item__btn::before {
+.quick-btn-list__item__btn--animate::after,
+.quick-btn-list__item__btn--animate::before {
   content: '';
   position: absolute;
   height: 35px;
@@ -39,18 +39,18 @@
   animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
 }
 
-.quick-btn-list__item__btn::after {
+.quick-btn-list__item__btn--animate::after {
   border: 4px solid rgb(38, 255, 239);
   animation-delay: 0s;
 }
 
-.quick-btn-list__item__btn::before {
-  border: 4px solid #fc49ef;
+.quick-btn-list__item__btn--animate::before {
+  border: 4px solid #49d267;
   animation-delay: 0.5s;
 }
 
-.quick-btn-list__item__btn:hover::after,
-.quick-btn-list__item__btn:hover::before {
+.quick-btn-list__item__btn--animate:hover::after,
+.quick-btn-list__item__btn--animate:hover::before {
   animation-play-state: paused;
 }
 
@@ -70,8 +70,8 @@
     width: 25px;
   }
 
-  .quick-btn-list__item__btn::after,
-  .quick-btn-list__item__btn::before {
+  .quick-btn-list__item__btn--animate::after,
+  .quick-btn-list__item__btn--animate::before {
     height: 50px;
     width: 50px;
   }

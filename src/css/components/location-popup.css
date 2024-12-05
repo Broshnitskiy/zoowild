@@ -1,5 +1,16 @@
-.location-popup {
+.location-popup__backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(165, 187, 125, 0.6);
+
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.location-popup {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -23,7 +34,7 @@
   border-radius: 50%;
 
   position: absolute;
-  bottom: -15px;
+  top: -15px;
   right: -15px;
   width: 30px;
   height: 30px;
@@ -133,7 +144,7 @@
   }
 
   .location-popup__close {
-    bottom: -20px;
+    top: -20px;
     right: -20px;
     width: 40px;
     height: 40px;
