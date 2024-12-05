@@ -1,6 +1,6 @@
 .contacts-popup {
   position: fixed;
-  right: 60px;
+  right: 65px;
   bottom: 168px;
   z-index: 100;
 
@@ -127,8 +127,8 @@
 
 @media only screen and (min-width: 1200px) {
   .contacts-popup {
-    right: 90px;
-    bottom: 150px;
+    right: 96px;
+    bottom: 154px;
     padding: 23px;
     width: 404px;
 
