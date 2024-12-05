@@ -1,9 +1,9 @@
 .whats-new {
   padding-top: 60px;
-  background-image: url(../../img/whats-new/bg-water-mob.png);
+  background-image: url(../../img/whats-new/bg-mob.png);
   background-repeat: no-repeat;
-  background-size: 480px;
-  background-position: bottom -50px center;
+  background-size: 100% 1033px;
+  background-position: bottom 0px center;
   overflow: hidden;
 }
 
