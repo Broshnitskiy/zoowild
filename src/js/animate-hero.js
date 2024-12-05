@@ -56,18 +56,18 @@ timeline
   .add(
     {
       targets: '.hero__image-parrot-secondary',
-      translateY: ['-150%', '0%'],
-      opacity: [1, 1],
-      duration: 2000,
+      translateX: ['150%', '0%'],
+      opacity: [0, 1],
+      duration: 1500,
     },
     '-=1500'
   )
   .add(
     {
       targets: '.hero__image-parrot',
-      translateY: ['-150%', '0%'],
-      opacity: [1, 1],
-      duration: 2000,
+      translateX: ['-200%', '0%'],
+      opacity: [0, 1],
+      duration: 1500,
     },
     '-=2000'
   );
