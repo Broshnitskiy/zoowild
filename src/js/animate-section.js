@@ -85,7 +85,6 @@ createAnimationObserver({
     opacity: [0, 1],
     duration: 1500,
     easing: 'easeOutQuad',
-    delay: 500,
   },
   threshold: 0.2,
 });
@@ -98,7 +97,6 @@ createAnimationObserver({
     opacity: [0, 1],
     duration: 1500,
     easing: 'easeOutQuad',
-    delay: 500,
   },
   threshold: 0.2,
 });
