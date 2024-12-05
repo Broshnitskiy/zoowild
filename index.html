@@ -34,7 +34,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script type="module" crossorigin src="/zoowild/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/zoowild/assets/styles-C6IFKP_R.css">
+    <link rel="stylesheet" crossorigin href="/zoowild/assets/styles-DaLLJT25.css">
   </head>
   <body>
     <main>
@@ -2392,23 +2392,6 @@
     </button>
   </li>
   <li class="quick-btn-list__item">
-    <button type="button" class="quick-btn-list__item__btn" data-tel-btn>
-      <svg
-        class="quick-btn-list__item__icon"
-        width="25"
-        height="24"
-        viewBox="0 0 25 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M7.32988 10.8269C8.72625 13.5711 10.9759 15.8111 13.7202 17.2172L15.8535 15.0839C16.1153 14.822 16.5032 14.7348 16.8426 14.8511C17.9287 15.2099 19.102 15.4039 20.3044 15.4039C20.8378 15.4039 21.2741 15.8402 21.2741 16.3736V19.7578C21.2741 20.2911 20.8378 20.7275 20.3044 20.7275C11.199 20.7275 3.81958 13.3481 3.81958 4.24265C3.81958 3.70931 4.25594 3.27295 4.78928 3.27295H8.18322C8.71655 3.27295 9.15291 3.70931 9.15291 4.24265C9.15291 5.45477 9.34685 6.6184 9.70564 7.70446C9.81231 8.04386 9.73473 8.42204 9.46322 8.69356L7.32988 10.8269Z"
-          fill="#5B6153"
-        />
-      </svg>
-    </button>
-  </li>
-  <li class="quick-btn-list__item">
     <button type="button" class="quick-btn-list__item__btn" data-message-btn>
       <svg
         class="quick-btn-list__item__icon"
@@ -2424,6 +2407,27 @@
           stroke-width="1.81818"
           stroke-linecap="round"
           stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+  </li>
+  <li class="quick-btn-list__item">
+    <button
+      type="button"
+      class="quick-btn-list__item__btn quick-btn-list__item__btn--animate"
+      data-tel-btn
+    >
+      <svg
+        class="quick-btn-list__item__icon"
+        width="25"
+        height="24"
+        viewBox="0 0 25 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.32988 10.8269C8.72625 13.5711 10.9759 15.8111 13.7202 17.2172L15.8535 15.0839C16.1153 14.822 16.5032 14.7348 16.8426 14.8511C17.9287 15.2099 19.102 15.4039 20.3044 15.4039C20.8378 15.4039 21.2741 15.8402 21.2741 16.3736V19.7578C21.2741 20.2911 20.8378 20.7275 20.3044 20.7275C11.199 20.7275 3.81958 13.3481 3.81958 4.24265C3.81958 3.70931 4.25594 3.27295 4.78928 3.27295H8.18322C8.71655 3.27295 9.15291 3.70931 9.15291 4.24265C9.15291 5.45477 9.34685 6.6184 9.70564 7.70446C9.81231 8.04386 9.73473 8.42204 9.46322 8.69356L7.32988 10.8269Z"
+          fill="#5B6153"
         />
       </svg>
     </button>
@@ -2646,162 +2650,170 @@
   </button>
 </div>
 
-    <div class="location-popup is-hidden" data-location-popup>
-  <img
-    class="location-popup__image"
-    loading="lazy"
-    src="/zoowild/assets/cat-location-DM0QMXiO.webp"
-    alt="Кіт"
-  />
+    <div class="location-popup__backdrop is-hidden" data-location-popup>
+  <div class="location-popup">
+    <img
+      class="location-popup__image"
+      loading="lazy"
+      src="/zoowild/assets/cat-location-DM0QMXiO.webp"
+      alt="Кіт"
+    />
 
-  <ul class="location-popup__list">
-    <li class="location-popup__item">
-      <div class="location-popup__details">
-        <p class="location-popup__number">01</p>
-        <p class="location-popup__schedule">Пн-Пт: 09:00-21:00</p>
-      </div>
-      <a class="location-popup__phone" href="tel:+380669861298"
-        >+38 (066) 986 12 98</a
-      >
-      <div class="location-popup__address">
-        <svg
-          class="location-popup__icon"
-          width="18"
-          height="22"
-          viewBox="0 0 18 22"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+    <ul class="location-popup__list">
+      <li class="location-popup__item">
+        <div class="location-popup__details">
+          <p class="location-popup__number">01</p>
+          <p class="location-popup__schedule">Пн-Пт: 09:00-21:00</p>
+        </div>
+        <a class="location-popup__phone" href="tel:+380669861298"
+          >+38 (066) 986 12 98</a
         >
-          <path
-            d="M16.3817 9.51325C16.3817 15.1439 8.8742 20.3991 8.8742 20.3991C8.8742 20.3991 1.3667 15.1439 1.3667 9.51325C1.3667 7.42258 2.15767 5.41754 3.56559 3.93921C4.97352 2.46089 6.88309 1.63037 8.8742 1.63037C10.8653 1.63037 12.7749 2.46089 14.1828 3.93921C15.5907 5.41754 16.3817 7.42258 16.3817 9.51325Z"
-            stroke="#A5BB7D"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M8.87539 11.3919C9.8626 11.3919 10.6629 10.5516 10.6629 9.51506C10.6629 8.47849 9.8626 7.63818 8.87539 7.63818C7.88818 7.63818 7.08789 8.47849 7.08789 9.51506C7.08789 10.5516 7.88818 11.3919 8.87539 11.3919Z"
-            fill="#A5BB7D"
-            stroke="#A5BB7D"
-            stroke-width="0.502722"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-        <p class="location-popup__text">м.Днiпро, Вул. Мазепи 39</p>
-      </div>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        class="location-popup__map-link"
-        href="https://maps.app.goo.gl/vWc1HvmWjkFXJjH96"
-        >Показати на мапі</a
-      >
-    </li>
-    <li class="location-popup__item">
-      <div class="location-popup__details">
-        <p class="location-popup__number">02</p>
-        <p class="location-popup__schedule">Пн-Пт: 09:00-21:00</p>
-      </div>
-      <a class="location-popup__phone" href="tel:+380668611290"
-        >+38 (066) 861 12 90</a
-      >
-      <div class="location-popup__address">
-        <svg
-          class="location-popup__icon"
-          width="18"
-          height="22"
-          viewBox="0 0 18 22"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+        <div class="location-popup__address">
+          <svg
+            class="location-popup__icon"
+            width="18"
+            height="22"
+            viewBox="0 0 18 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.3817 9.51325C16.3817 15.1439 8.8742 20.3991 8.8742 20.3991C8.8742 20.3991 1.3667 15.1439 1.3667 9.51325C1.3667 7.42258 2.15767 5.41754 3.56559 3.93921C4.97352 2.46089 6.88309 1.63037 8.8742 1.63037C10.8653 1.63037 12.7749 2.46089 14.1828 3.93921C15.5907 5.41754 16.3817 7.42258 16.3817 9.51325Z"
+              stroke="#A5BB7D"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8.87539 11.3919C9.8626 11.3919 10.6629 10.5516 10.6629 9.51506C10.6629 8.47849 9.8626 7.63818 8.87539 7.63818C7.88818 7.63818 7.08789 8.47849 7.08789 9.51506C7.08789 10.5516 7.88818 11.3919 8.87539 11.3919Z"
+              fill="#A5BB7D"
+              stroke="#A5BB7D"
+              stroke-width="0.502722"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p class="location-popup__text">м.Днiпро, Вул. Мазепи 39</p>
+        </div>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          class="location-popup__map-link"
+          href="https://maps.app.goo.gl/vWc1HvmWjkFXJjH96"
+          >Показати на мапі</a
         >
-          <path
-            d="M16.3817 9.51325C16.3817 15.1439 8.8742 20.3991 8.8742 20.3991C8.8742 20.3991 1.3667 15.1439 1.3667 9.51325C1.3667 7.42258 2.15767 5.41754 3.56559 3.93921C4.97352 2.46089 6.88309 1.63037 8.8742 1.63037C10.8653 1.63037 12.7749 2.46089 14.1828 3.93921C15.5907 5.41754 16.3817 7.42258 16.3817 9.51325Z"
-            stroke="#A5BB7D"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M8.87539 11.3919C9.8626 11.3919 10.6629 10.5516 10.6629 9.51506C10.6629 8.47849 9.8626 7.63818 8.87539 7.63818C7.88818 7.63818 7.08789 8.47849 7.08789 9.51506C7.08789 10.5516 7.88818 11.3919 8.87539 11.3919Z"
-            fill="#A5BB7D"
-            stroke="#A5BB7D"
-            stroke-width="0.502722"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-        <p class="location-popup__text">м.Днiпро, вул. Новоорловська 4</p>
-      </div>
-      <a
-        class="location-popup__map-link"
-        href="https://maps.app.goo.gl/ueUjGtJDp8fKz3xY7"
-        >Показати на мапі</a
-      >
-    </li>
-    <li class="location-popup__item">
-      <div class="location-popup__details">
-        <p class="location-popup__number">03</p>
-        <p class="location-popup__schedule">Пн-Пт: 09:00-21:00</p>
-      </div>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        class="location-popup__phone"
-        href="tel:+380669861298"
-        >+38 (066) 986 12 98</a
-      >
-      <div class="location-popup__address">
-        <svg
-          class="location-popup__icon"
-          width="18"
-          height="22"
-          viewBox="0 0 18 22"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+      </li>
+      <li class="location-popup__item">
+        <div class="location-popup__details">
+          <p class="location-popup__number">02</p>
+          <p class="location-popup__schedule">Пн-Пт: 09:00-21:00</p>
+        </div>
+        <a class="location-popup__phone" href="tel:+380668611290"
+          >+38 (066) 861 12 90</a
         >
-          <path
-            d="M16.3817 9.51325C16.3817 15.1439 8.8742 20.3991 8.8742 20.3991C8.8742 20.3991 1.3667 15.1439 1.3667 9.51325C1.3667 7.42258 2.15767 5.41754 3.56559 3.93921C4.97352 2.46089 6.88309 1.63037 8.8742 1.63037C10.8653 1.63037 12.7749 2.46089 14.1828 3.93921C15.5907 5.41754 16.3817 7.42258 16.3817 9.51325Z"
-            stroke="#A5BB7D"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M8.87539 11.3919C9.8626 11.3919 10.6629 10.5516 10.6629 9.51506C10.6629 8.47849 9.8626 7.63818 8.87539 7.63818C7.88818 7.63818 7.08789 8.47849 7.08789 9.51506C7.08789 10.5516 7.88818 11.3919 8.87539 11.3919Z"
-            fill="#A5BB7D"
-            stroke="#A5BB7D"
-            stroke-width="0.502722"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-        <p class="location-popup__text">м.Днiпро, Вул. Данила Галицького 25</p>
-      </div>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        class="location-popup__map-link"
-        href="https://maps.app.goo.gl/e7JYxHBHUS4rzT5T6"
-        >Показати на мапі</a
-      >
-    </li>
-  </ul>
+        <div class="location-popup__address">
+          <svg
+            class="location-popup__icon"
+            width="18"
+            height="22"
+            viewBox="0 0 18 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.3817 9.51325C16.3817 15.1439 8.8742 20.3991 8.8742 20.3991C8.8742 20.3991 1.3667 15.1439 1.3667 9.51325C1.3667 7.42258 2.15767 5.41754 3.56559 3.93921C4.97352 2.46089 6.88309 1.63037 8.8742 1.63037C10.8653 1.63037 12.7749 2.46089 14.1828 3.93921C15.5907 5.41754 16.3817 7.42258 16.3817 9.51325Z"
+              stroke="#A5BB7D"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8.87539 11.3919C9.8626 11.3919 10.6629 10.5516 10.6629 9.51506C10.6629 8.47849 9.8626 7.63818 8.87539 7.63818C7.88818 7.63818 7.08789 8.47849 7.08789 9.51506C7.08789 10.5516 7.88818 11.3919 8.87539 11.3919Z"
+              fill="#A5BB7D"
+              stroke="#A5BB7D"
+              stroke-width="0.502722"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p class="location-popup__text">м.Днiпро, вул. Новоорловська 4</p>
+        </div>
+        <a
+          class="location-popup__map-link"
+          href="https://maps.app.goo.gl/ueUjGtJDp8fKz3xY7"
+          >Показати на мапі</a
+        >
+      </li>
+      <li class="location-popup__item">
+        <div class="location-popup__details">
+          <p class="location-popup__number">03</p>
+          <p class="location-popup__schedule">Пн-Пт: 09:00-21:00</p>
+        </div>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          class="location-popup__phone"
+          href="tel:+380669861298"
+          >+38 (066) 986 12 98</a
+        >
+        <div class="location-popup__address">
+          <svg
+            class="location-popup__icon"
+            width="18"
+            height="22"
+            viewBox="0 0 18 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.3817 9.51325C16.3817 15.1439 8.8742 20.3991 8.8742 20.3991C8.8742 20.3991 1.3667 15.1439 1.3667 9.51325C1.3667 7.42258 2.15767 5.41754 3.56559 3.93921C4.97352 2.46089 6.88309 1.63037 8.8742 1.63037C10.8653 1.63037 12.7749 2.46089 14.1828 3.93921C15.5907 5.41754 16.3817 7.42258 16.3817 9.51325Z"
+              stroke="#A5BB7D"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8.87539 11.3919C9.8626 11.3919 10.6629 10.5516 10.6629 9.51506C10.6629 8.47849 9.8626 7.63818 8.87539 7.63818C7.88818 7.63818 7.08789 8.47849 7.08789 9.51506C7.08789 10.5516 7.88818 11.3919 8.87539 11.3919Z"
+              fill="#A5BB7D"
+              stroke="#A5BB7D"
+              stroke-width="0.502722"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p class="location-popup__text">
+            м.Днiпро, Вул. Данила Галицького 25
+          </p>
+        </div>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          class="location-popup__map-link"
+          href="https://maps.app.goo.gl/e7JYxHBHUS4rzT5T6"
+          >Показати на мапі</a
+        >
+      </li>
+    </ul>
 
-  <button class="location-popup__close" type="button" data-location-popup-close>
-    <svg
-      class="location-popup__close-icon"
-      width="19"
-      height="19"
-      viewBox="0 0 19 19"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+    <button
+      class="location-popup__close"
+      type="button"
+      data-location-popup-close
     >
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M9.67208 10.7831L16.631 17.7421C16.8631 17.9662 17.1738 18.0902 17.4963 18.0874C17.8189 18.0846 18.1274 17.9552 18.3555 17.7271C18.5836 17.499 18.7129 17.1905 18.7157 16.868C18.7185 16.5454 18.5946 16.2347 18.3705 16.0027L11.4115 9.04371L18.3705 2.08475C18.5946 1.85274 18.7185 1.542 18.7157 1.21946C18.7129 0.896919 18.5836 0.588383 18.3555 0.360303C18.1274 0.132223 17.8189 0.0028493 17.4963 4.65029e-05C17.1738 -0.00275629 16.8631 0.121236 16.631 0.345318L9.67208 7.30428L2.71313 0.345318C2.48007 0.126775 2.17114 0.00747599 1.85169 0.0126633C1.53224 0.0178506 1.22734 0.147118 1.00151 0.373111C0.775674 0.599106 0.646622 0.904096 0.641661 1.22355C0.636699 1.543 0.756217 1.85185 0.974925 2.08475L7.93265 9.04371L0.973694 16.0027C0.856203 16.1161 0.762487 16.2519 0.698017 16.402C0.633546 16.552 0.59961 16.7135 0.598191 16.8768C0.596772 17.0401 0.627896 17.2021 0.689749 17.3533C0.751602 17.5045 0.842945 17.6418 0.958447 17.7573C1.07395 17.8728 1.2113 17.9642 1.36248 18.026C1.51366 18.0879 1.67564 18.119 1.83898 18.1176C2.00232 18.1162 2.16374 18.0822 2.31383 18.0178C2.46391 17.9533 2.59965 17.8596 2.71313 17.7421L9.67208 10.7831Z"
-        fill="#A5BB7D"
-      />
-    </svg>
-  </button>
+      <svg
+        class="location-popup__close-icon"
+        width="19"
+        height="19"
+        viewBox="0 0 19 19"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M9.67208 10.7831L16.631 17.7421C16.8631 17.9662 17.1738 18.0902 17.4963 18.0874C17.8189 18.0846 18.1274 17.9552 18.3555 17.7271C18.5836 17.499 18.7129 17.1905 18.7157 16.868C18.7185 16.5454 18.5946 16.2347 18.3705 16.0027L11.4115 9.04371L18.3705 2.08475C18.5946 1.85274 18.7185 1.542 18.7157 1.21946C18.7129 0.896919 18.5836 0.588383 18.3555 0.360303C18.1274 0.132223 17.8189 0.0028493 17.4963 4.65029e-05C17.1738 -0.00275629 16.8631 0.121236 16.631 0.345318L9.67208 7.30428L2.71313 0.345318C2.48007 0.126775 2.17114 0.00747599 1.85169 0.0126633C1.53224 0.0178506 1.22734 0.147118 1.00151 0.373111C0.775674 0.599106 0.646622 0.904096 0.641661 1.22355C0.636699 1.543 0.756217 1.85185 0.974925 2.08475L7.93265 9.04371L0.973694 16.0027C0.856203 16.1161 0.762487 16.2519 0.698017 16.402C0.633546 16.552 0.59961 16.7135 0.598191 16.8768C0.596772 17.0401 0.627896 17.2021 0.689749 17.3533C0.751602 17.5045 0.842945 17.6418 0.958447 17.7573C1.07395 17.8728 1.2113 17.9642 1.36248 18.026C1.51366 18.0879 1.67564 18.119 1.83898 18.1176C2.00232 18.1162 2.16374 18.0822 2.31383 18.0178C2.46391 17.9533 2.59965 17.8596 2.71313 17.7421L9.67208 10.7831Z"
+          fill="#A5BB7D"
+        />
+      </svg>
+    </button>
+  </div>
 </div>
 
     <div class="overlay is-hidden" data-video-modal>
